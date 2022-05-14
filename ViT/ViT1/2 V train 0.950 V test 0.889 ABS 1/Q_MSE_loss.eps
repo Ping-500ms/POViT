@@ -1,0 +1,6093 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: Q_MSE_loss.eps
+%%Creator: Matplotlib v3.4.3, https://matplotlib.org/
+%%CreationDate: Mon Apr 25 16:47:25 2022
+%%Orientation: portrait
+%%BoundingBox: 75 223 537 569
+%%HiResBoundingBox: 75.600000 223.200000 536.400000 568.800000
+%%EndComments
+%%BeginProlog
+/mpldict 11 dict def
+mpldict begin
+/_d { bind def } bind def
+/m { moveto } _d
+/l { lineto } _d
+/r { rlineto } _d
+/c { curveto } _d
+/cl { closepath } _d
+/ce { closepath eofill } _d
+/box {
+      m
+      1 index 0 r
+      0 exch r
+      neg 0 r
+      cl
+    } _d
+/clipbox {
+      box
+      clip
+      newpath
+    } _d
+/sc { setcachedevice } _d
+%!PS-Adobe-3.0 Resource-Font
+%%Creator: Converted from TrueType to Type 3 by Matplotlib.
+10 dict begin
+/FontName /DejaVuSans def
+/PaintType 0 def
+/FontMatrix [0.00048828125 0 0 0.00048828125 0 0] def
+/FontBBox [-2090 -948 3673 2524] def
+/FontType 3 def
+/Encoding [/minus /space /zero /one /two /three /four /five /E /L /M /Q /S /T /a /c /d /e /h /i /n /o /p /q /r /s /t /u] def
+/CharStrings 29 dict dup begin
+/.notdef 0 def
+/minus{1716 0 217 557 1499 727 sc
+217 727 m
+1499 727 l
+1499 557 l
+217 557 l
+217 727 l
+
+ce} _d
+/space{651 0 0 0 0 0 sc
+ce} _d
+/zero{1303 0 135 -29 1167 1520 sc
+651 1360 m
+547 1360 469 1309 416 1206 c
+364 1104 338 950 338 745 c
+338 540 364 387 416 284 c
+469 182 547 131 651 131 c
+756 131 834 182 886 284 c
+939 387 965 540 965 745 c
+965 950 939 1104 886 1206 c
+834 1309 756 1360 651 1360 c
+
+651 1520 m
+818 1520 946 1454 1034 1321 c
+1123 1189 1167 997 1167 745 c
+1167 494 1123 302 1034 169 c
+946 37 818 -29 651 -29 c
+484 -29 356 37 267 169 c
+179 302 135 494 135 745 c
+135 997 179 1189 267 1321 c
+356 1454 484 1520 651 1520 c
+
+ce} _d
+/one{1303 0 225 0 1114 1493 sc
+254 170 m
+584 170 l
+584 1309 l
+225 1237 l
+225 1421 l
+582 1493 l
+784 1493 l
+784 170 l
+1114 170 l
+1114 0 l
+254 0 l
+254 170 l
+
+ce} _d
+/two{1303 0 150 0 1098 1520 sc
+393 170 m
+1098 170 l
+1098 0 l
+150 0 l
+150 170 l
+227 249 331 356 463 489 c
+596 623 679 709 713 748 c
+778 821 823 882 848 932 c
+874 983 887 1032 887 1081 c
+887 1160 859 1225 803 1275 c
+748 1325 675 1350 586 1350 c
+523 1350 456 1339 385 1317 c
+315 1295 240 1262 160 1217 c
+160 1421 l
+241 1454 317 1478 388 1495 c
+459 1512 523 1520 582 1520 c
+737 1520 860 1481 952 1404 c
+1044 1327 1090 1223 1090 1094 c
+1090 1033 1078 974 1055 919 c
+1032 864 991 800 930 725 c
+913 706 860 650 771 557 c
+682 465 556 336 393 170 c
+
+ce} _d
+/three{1303 0 156 -29 1139 1520 sc
+831 805 m
+928 784 1003 741 1057 676 c
+1112 611 1139 530 1139 434 c
+1139 287 1088 173 987 92 c
+886 11 742 -29 555 -29 c
+492 -29 428 -23 361 -10 c
+295 2 227 20 156 45 c
+156 240 l
+212 207 273 183 340 166 c
+407 149 476 141 549 141 c
+676 141 772 166 838 216 c
+905 266 938 339 938 434 c
+938 522 907 591 845 640 c
+784 690 698 715 588 715 c
+414 715 l
+414 881 l
+596 881 l
+695 881 771 901 824 940 c
+877 980 903 1037 903 1112 c
+903 1189 876 1247 821 1288 c
+767 1329 689 1350 588 1350 c
+533 1350 473 1344 410 1332 c
+347 1320 277 1301 201 1276 c
+201 1456 l
+278 1477 349 1493 416 1504 c
+483 1515 547 1520 606 1520 c
+759 1520 881 1485 970 1415 c
+1059 1346 1104 1252 1104 1133 c
+1104 1050 1080 980 1033 923 c
+986 866 918 827 831 805 c
+
+ce} _d
+/four{1303 0 100 0 1188 1493 sc
+774 1317 m
+264 520 l
+774 520 l
+774 1317 l
+
+721 1493 m
+975 1493 l
+975 520 l
+1188 520 l
+1188 352 l
+975 352 l
+975 0 l
+774 0 l
+774 352 l
+100 352 l
+100 547 l
+721 1493 l
+
+ce} _d
+/five{1303 0 158 -29 1124 1493 sc
+221 1493 m
+1014 1493 l
+1014 1323 l
+406 1323 l
+406 957 l
+435 967 465 974 494 979 c
+523 984 553 987 582 987 c
+749 987 881 941 978 850 c
+1075 759 1124 635 1124 479 c
+1124 318 1074 193 974 104 c
+874 15 733 -29 551 -29 c
+488 -29 424 -24 359 -13 c
+294 -2 227 14 158 35 c
+158 238 l
+218 205 280 181 344 165 c
+408 149 476 141 547 141 c
+662 141 754 171 821 232 c
+888 293 922 375 922 479 c
+922 583 888 665 821 726 c
+754 787 662 817 547 817 c
+493 817 439 811 385 799 c
+332 787 277 768 221 743 c
+221 1493 l
+
+ce} _d
+/E{1294 0 201 0 1163 1493 sc
+201 1493 m
+1145 1493 l
+1145 1323 l
+403 1323 l
+403 881 l
+1114 881 l
+1114 711 l
+403 711 l
+403 170 l
+1163 170 l
+1163 0 l
+201 0 l
+201 1493 l
+
+ce} _d
+/L{1141 0 201 0 1130 1493 sc
+201 1493 m
+403 1493 l
+403 170 l
+1130 170 l
+1130 0 l
+201 0 l
+201 1493 l
+
+ce} _d
+/M{1767 0 201 0 1567 1493 sc
+201 1493 m
+502 1493 l
+883 477 l
+1266 1493 l
+1567 1493 l
+1567 0 l
+1370 0 l
+1370 1311 l
+985 287 l
+782 287 l
+397 1311 l
+397 0 l
+201 0 l
+201 1493 l
+
+ce} _d
+/Q{1612 0 115 -264 1497 1520 sc
+807 1356 m
+660 1356 544 1301 457 1192 c
+371 1083 328 934 328 745 c
+328 557 371 408 457 299 c
+544 190 660 135 807 135 c
+954 135 1070 190 1155 299 c
+1241 408 1284 557 1284 745 c
+1284 934 1241 1083 1155 1192 c
+1070 1301 954 1356 807 1356 c
+
+1090 27 m
+1356 -264 l
+1112 -264 l
+891 -25 l
+869 -26 852 -27 840 -28 c
+829 -29 818 -29 807 -29 c
+597 -29 429 41 303 181 c
+178 322 115 510 115 745 c
+115 981 178 1169 303 1309 c
+429 1450 597 1520 807 1520 c
+1016 1520 1184 1450 1309 1309 c
+1434 1169 1497 981 1497 745 c
+1497 572 1462 423 1392 300 c
+1323 177 1222 86 1090 27 c
+
+ce} _d
+/S{1300 0 135 -29 1186 1520 sc
+1096 1444 m
+1096 1247 l
+1019 1284 947 1311 879 1329 c
+811 1347 745 1356 682 1356 c
+572 1356 487 1335 427 1292 c
+368 1249 338 1189 338 1110 c
+338 1044 358 994 397 960 c
+437 927 512 900 623 879 c
+745 854 l
+896 825 1007 775 1078 702 c
+1150 630 1186 533 1186 412 c
+1186 267 1137 158 1040 83 c
+943 8 801 -29 614 -29 c
+543 -29 468 -21 388 -5 c
+309 11 226 35 141 66 c
+141 274 l
+223 228 303 193 382 170 c
+461 147 538 135 614 135 c
+729 135 818 158 881 203 c
+944 248 975 313 975 397 c
+975 470 952 528 907 569 c
+862 610 789 641 686 662 c
+563 686 l
+412 716 303 763 236 827 c
+169 891 135 980 135 1094 c
+135 1226 181 1330 274 1406 c
+367 1482 496 1520 659 1520 c
+729 1520 800 1514 873 1501 c
+946 1488 1020 1469 1096 1444 c
+
+ce} _d
+/T{1251 0 -6 0 1257 1493 sc
+-6 1493 m
+1257 1493 l
+1257 1323 l
+727 1323 l
+727 0 l
+524 0 l
+524 1323 l
+-6 1323 l
+-6 1493 l
+
+ce} _d
+/a{1255 0 123 -29 1069 1147 sc
+702 563 m
+553 563 450 546 393 512 c
+336 478 307 420 307 338 c
+307 273 328 221 371 182 c
+414 144 473 125 547 125 c
+649 125 731 161 792 233 c
+854 306 885 402 885 522 c
+885 563 l
+702 563 l
+
+1069 639 m
+1069 0 l
+885 0 l
+885 170 l
+843 102 791 52 728 19 c
+665 -13 589 -29 498 -29 c
+383 -29 292 3 224 67 c
+157 132 123 218 123 326 c
+123 452 165 547 249 611 c
+334 675 460 707 627 707 c
+885 707 l
+885 725 l
+885 810 857 875 801 921 c
+746 968 668 991 567 991 c
+503 991 441 983 380 968 c
+319 953 261 930 205 899 c
+205 1069 l
+272 1095 338 1114 401 1127 c
+464 1140 526 1147 586 1147 c
+748 1147 869 1105 949 1021 c
+1029 937 1069 810 1069 639 c
+
+ce} _d
+/c{1126 0 113 -29 999 1147 sc
+999 1077 m
+999 905 l
+947 934 895 955 842 969 c
+790 984 737 991 684 991 c
+565 991 472 953 406 877 c
+340 802 307 696 307 559 c
+307 422 340 316 406 240 c
+472 165 565 127 684 127 c
+737 127 790 134 842 148 c
+895 163 947 184 999 213 c
+999 43 l
+948 19 894 1 839 -11 c
+784 -23 726 -29 664 -29 c
+495 -29 361 24 262 130 c
+163 236 113 379 113 559 c
+113 742 163 885 263 990 c
+364 1095 501 1147 676 1147 c
+733 1147 788 1141 842 1129 c
+896 1118 948 1100 999 1077 c
+
+ce} _d
+/d{1300 0 113 -29 1114 1556 sc
+930 950 m
+930 1556 l
+1114 1556 l
+1114 0 l
+930 0 l
+930 168 l
+891 101 842 52 783 19 c
+724 -13 654 -29 571 -29 c
+436 -29 325 25 240 133 c
+155 241 113 383 113 559 c
+113 735 155 877 240 985 c
+325 1093 436 1147 571 1147 c
+654 1147 724 1131 783 1098 c
+842 1066 891 1017 930 950 c
+
+303 559 m
+303 424 331 317 386 240 c
+442 163 519 125 616 125 c
+713 125 790 163 846 240 c
+902 317 930 424 930 559 c
+930 694 902 800 846 877 c
+790 954 713 993 616 993 c
+519 993 442 954 386 877 c
+331 800 303 694 303 559 c
+
+ce} _d
+/e{1260 0 113 -29 1151 1147 sc
+1151 606 m
+1151 516 l
+305 516 l
+313 389 351 293 419 226 c
+488 160 583 127 705 127 c
+776 127 844 136 910 153 c
+977 170 1043 196 1108 231 c
+1108 57 l
+1042 29 974 8 905 -7 c
+836 -22 765 -29 694 -29 c
+515 -29 374 23 269 127 c
+165 231 113 372 113 549 c
+113 732 162 878 261 985 c
+360 1093 494 1147 662 1147 c
+813 1147 932 1098 1019 1001 c
+1107 904 1151 773 1151 606 c
+
+967 660 m
+966 761 937 841 882 901 c
+827 961 755 991 664 991 c
+561 991 479 962 417 904 c
+356 846 320 764 311 659 c
+967 660 l
+
+ce} _d
+/h{1298 0 186 0 1124 1556 sc
+1124 676 m
+1124 0 l
+940 0 l
+940 670 l
+940 776 919 855 878 908 c
+837 961 775 987 692 987 c
+593 987 514 955 457 892 c
+400 829 371 742 371 633 c
+371 0 l
+186 0 l
+186 1556 l
+371 1556 l
+371 946 l
+415 1013 467 1064 526 1097 c
+586 1130 655 1147 733 1147 c
+862 1147 959 1107 1025 1027 c
+1091 948 1124 831 1124 676 c
+
+ce} _d
+/i{569 0 193 0 377 1556 sc
+193 1120 m
+377 1120 l
+377 0 l
+193 0 l
+193 1120 l
+
+193 1556 m
+377 1556 l
+377 1323 l
+193 1323 l
+193 1556 l
+
+ce} _d
+/n{1298 0 186 0 1124 1147 sc
+1124 676 m
+1124 0 l
+940 0 l
+940 670 l
+940 776 919 855 878 908 c
+837 961 775 987 692 987 c
+593 987 514 955 457 892 c
+400 829 371 742 371 633 c
+371 0 l
+186 0 l
+186 1120 l
+371 1120 l
+371 946 l
+415 1013 467 1064 526 1097 c
+586 1130 655 1147 733 1147 c
+862 1147 959 1107 1025 1027 c
+1091 948 1124 831 1124 676 c
+
+ce} _d
+/o{1253 0 113 -29 1141 1147 sc
+627 991 m
+528 991 450 952 393 875 c
+336 798 307 693 307 559 c
+307 425 335 319 392 242 c
+449 165 528 127 627 127 c
+725 127 803 166 860 243 c
+917 320 946 426 946 559 c
+946 692 917 797 860 874 c
+803 952 725 991 627 991 c
+
+627 1147 m
+787 1147 913 1095 1004 991 c
+1095 887 1141 743 1141 559 c
+1141 376 1095 232 1004 127 c
+913 23 787 -29 627 -29 c
+466 -29 340 23 249 127 c
+158 232 113 376 113 559 c
+113 743 158 887 249 991 c
+340 1095 466 1147 627 1147 c
+
+ce} _d
+/p{1300 0 186 -426 1188 1147 sc
+371 168 m
+371 -426 l
+186 -426 l
+186 1120 l
+371 1120 l
+371 950 l
+410 1017 458 1066 517 1098 c
+576 1131 647 1147 729 1147 c
+865 1147 975 1093 1060 985 c
+1145 877 1188 735 1188 559 c
+1188 383 1145 241 1060 133 c
+975 25 865 -29 729 -29 c
+647 -29 576 -13 517 19 c
+458 52 410 101 371 168 c
+
+997 559 m
+997 694 969 800 913 877 c
+858 954 781 993 684 993 c
+587 993 510 954 454 877 c
+399 800 371 694 371 559 c
+371 424 399 317 454 240 c
+510 163 587 125 684 125 c
+781 125 858 163 913 240 c
+969 317 997 424 997 559 c
+
+ce} _d
+/q{1300 0 113 -426 1114 1147 sc
+303 559 m
+303 424 331 317 386 240 c
+442 163 519 125 616 125 c
+713 125 790 163 846 240 c
+902 317 930 424 930 559 c
+930 694 902 800 846 877 c
+790 954 713 993 616 993 c
+519 993 442 954 386 877 c
+331 800 303 694 303 559 c
+
+930 168 m
+891 101 842 52 783 19 c
+724 -13 654 -29 571 -29 c
+436 -29 325 25 240 133 c
+155 241 113 383 113 559 c
+113 735 155 877 240 985 c
+325 1093 436 1147 571 1147 c
+654 1147 724 1131 783 1098 c
+842 1066 891 1017 930 950 c
+930 1120 l
+1114 1120 l
+1114 -426 l
+930 -426 l
+930 168 l
+
+ce} _d
+/r{842 0 186 0 842 1147 sc
+842 948 m
+821 960 799 969 774 974 c
+750 980 723 983 694 983 c
+590 983 510 949 454 881 c
+399 814 371 717 371 590 c
+371 0 l
+186 0 l
+186 1120 l
+371 1120 l
+371 946 l
+410 1014 460 1064 522 1097 c
+584 1130 659 1147 748 1147 c
+761 1147 775 1146 790 1144 c
+805 1143 822 1140 841 1137 c
+842 948 l
+
+ce} _d
+/s{1067 0 111 -29 967 1147 sc
+907 1087 m
+907 913 l
+855 940 801 960 745 973 c
+689 986 631 993 571 993 c
+480 993 411 979 365 951 c
+320 923 297 881 297 825 c
+297 782 313 749 346 724 c
+379 700 444 677 543 655 c
+606 641 l
+737 613 829 573 884 522 c
+939 471 967 400 967 309 c
+967 205 926 123 843 62 c
+761 1 648 -29 504 -29 c
+444 -29 381 -23 316 -11 c
+251 0 183 18 111 41 c
+111 231 l
+179 196 246 169 312 151 c
+378 134 443 125 508 125 c
+595 125 661 140 708 169 c
+755 199 778 241 778 295 c
+778 345 761 383 727 410 c
+694 437 620 462 506 487 c
+442 502 l
+328 526 246 563 195 612 c
+144 662 119 730 119 817 c
+119 922 156 1004 231 1061 c
+306 1118 412 1147 549 1147 c
+617 1147 681 1142 741 1132 c
+801 1122 856 1107 907 1087 c
+
+ce} _d
+/t{803 0 55 0 754 1438 sc
+375 1438 m
+375 1120 l
+754 1120 l
+754 977 l
+375 977 l
+375 369 l
+375 278 387 219 412 193 c
+437 167 488 154 565 154 c
+754 154 l
+754 0 l
+565 0 l
+423 0 325 26 271 79 c
+217 132 190 229 190 369 c
+190 977 l
+55 977 l
+55 1120 l
+190 1120 l
+190 1438 l
+375 1438 l
+
+ce} _d
+/u{1298 0 174 -29 1112 1147 sc
+174 442 m
+174 1120 l
+358 1120 l
+358 449 l
+358 343 379 263 420 210 c
+461 157 523 131 606 131 c
+705 131 784 163 841 226 c
+899 289 928 376 928 485 c
+928 1120 l
+1112 1120 l
+1112 0 l
+928 0 l
+928 172 l
+883 104 831 53 772 20 c
+713 -13 645 -29 567 -29 c
+438 -29 341 11 274 91 c
+207 171 174 288 174 442 c
+
+637 1147 m
+637 1147 l
+
+ce} _d
+end readonly def
+
+/BuildGlyph {
+ exch begin
+ CharStrings exch
+ 2 copy known not {pop /.notdef} if
+ true 3 1 roll get exec
+ end
+} _d
+
+/BuildChar {
+ 1 index /Encoding get exch get
+ 1 index /BuildGlyph get exec
+} _d
+
+FontName currentdict end definefont pop
+end
+%%EndProlog
+mpldict begin
+75.6 223.2 translate
+460.8 345.6 0 0 clipbox
+gsave
+0 0 m
+460.8 0 l
+460.8 345.6 l
+0 345.6 l
+cl
+1.000 setgray
+fill
+grestore
+gsave
+57.6 38.016 m
+414.72 38.016 l
+414.72 304.128 l
+57.6 304.128 l
+cl
+1.000 setgray
+fill
+grestore
+0.800 setlinewidth
+1 setlinejoin
+0 setlinecap
+[] 0 setdash
+0.000 setgray
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+73.8327 38.016 o
+grestore
+/DejaVuSans 10.000 selectfont
+gsave
+
+70.653040 23.422250 translate
+0.000000 rotate
+0.000000 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+127.942 38.016 o
+grestore
+gsave
+
+121.582443 23.422250 translate
+0.000000 rotate
+0.000000 0 m /five glyphshow
+6.362305 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+182.051 38.016 o
+grestore
+gsave
+
+172.511847 23.422250 translate
+0.000000 rotate
+0.000000 0 m /one glyphshow
+6.362305 0 m /zero glyphshow
+12.724609 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+236.16 38.016 o
+grestore
+gsave
+
+226.620937 23.422250 translate
+0.000000 rotate
+0.000000 0 m /one glyphshow
+6.362305 0 m /five glyphshow
+12.724609 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+290.269 38.016 o
+grestore
+gsave
+
+280.730028 23.422250 translate
+0.000000 rotate
+0.000000 0 m /two glyphshow
+6.362305 0 m /zero glyphshow
+12.724609 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+344.378 38.016 o
+grestore
+gsave
+
+334.839119 23.422250 translate
+0.000000 rotate
+0.000000 0 m /two glyphshow
+6.362305 0 m /five glyphshow
+12.724609 0 m /zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+0 0 m
+0 -3.5 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+398.487 38.016 o
+grestore
+gsave
+
+388.948210 23.422250 translate
+0.000000 rotate
+0.000000 0 m /three glyphshow
+6.362305 0 m /zero glyphshow
+12.724609 0 m /zero glyphshow
+grestore
+gsave
+
+218.238125 9.750375 translate
+0.000000 rotate
+0.000000 0 m /E glyphshow
+6.318359 0 m /p glyphshow
+12.666016 0 m /o glyphshow
+18.784180 0 m /c glyphshow
+24.282227 0 m /h glyphshow
+30.620117 0 m /s glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 55.8463 o
+grestore
+gsave
+26.600000 51.885404 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.064063 moveto
+/one glyphshow
+6.362305 0.064063 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 3.892188 moveto
+/minus glyphshow
+18.685547 3.892188 moveto
+/four glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 99.0377 o
+grestore
+gsave
+26.600000 94.576762 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.976562 moveto
+/one glyphshow
+6.362305 0.976562 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 4.804688 moveto
+/minus glyphshow
+18.685547 4.804688 moveto
+/three glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 142.229 o
+grestore
+gsave
+26.600000 137.768120 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.976562 moveto
+/one glyphshow
+6.362305 0.976562 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 4.804688 moveto
+/minus glyphshow
+18.685547 4.804688 moveto
+/two glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 185.42 o
+grestore
+gsave
+26.600000 181.459478 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.064063 moveto
+/one glyphshow
+6.362305 0.064063 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 3.892188 moveto
+/minus glyphshow
+18.685547 3.892188 moveto
+/one glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 228.612 o
+grestore
+gsave
+32.600000 224.150836 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.976562 moveto
+/one glyphshow
+6.362305 0.976562 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 4.804688 moveto
+/zero glyphshow
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.8 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-3.5 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 271.803 o
+grestore
+gsave
+32.600000 267.842194 translate
+0.000000 rotate
+/DejaVuSans 10.0 selectfont
+0.000000 0.064063 moveto
+/one glyphshow
+6.362305 0.064063 moveto
+/zero glyphshow
+/DejaVuSans 7.0 selectfont
+12.820312 3.892188 moveto
+/one glyphshow
+grestore
+0.600 setlinewidth
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 38.6588 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 42.8444 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 46.2644 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 49.1559 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 51.6607 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 53.87 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 68.8482 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 76.4539 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 81.8501 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 86.0358 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 89.4558 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 92.3473 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 94.852 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 97.0614 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 112.04 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 119.645 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 125.041 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 129.227 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 132.647 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 135.539 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 138.043 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 140.253 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 155.231 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 162.837 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 168.233 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 172.419 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 175.838 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 178.73 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 181.235 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 183.444 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 198.422 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 206.028 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 211.424 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 215.61 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 219.03 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 221.921 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 224.426 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 226.635 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 241.614 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 249.219 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 254.616 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 258.801 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 262.221 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 265.113 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 267.617 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 269.827 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 284.805 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 292.411 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 297.807 o
+grestore
+gsave
+/o {
+gsave
+newpath
+translate
+0.6 setlinewidth
+1 setlinejoin
+
+0 setlinecap
+
+-0 0 m
+-2 0 l
+
+gsave
+0.000 setgray
+fill
+grestore
+stroke
+grestore
+} bind def
+57.6 301.993 o
+grestore
+gsave
+
+20.521875 115.775125 translate
+90.000000 rotate
+0.000000 0 m /Q glyphshow
+7.871094 0 m /space glyphshow
+11.049805 0 m /M glyphshow
+19.677734 0 m /e glyphshow
+25.830078 0 m /a glyphshow
+31.958008 0 m /n glyphshow
+38.295898 0 m /space glyphshow
+41.474609 0 m /S glyphshow
+47.822266 0 m /q glyphshow
+54.169922 0 m /u glyphshow
+60.507812 0 m /a glyphshow
+66.635742 0 m /r glyphshow
+70.497070 0 m /e glyphshow
+76.649414 0 m /d glyphshow
+82.997070 0 m /space glyphshow
+86.175781 0 m /E glyphshow
+92.494141 0 m /r glyphshow
+96.480469 0 m /r glyphshow
+100.341797 0 m /o glyphshow
+106.459961 0 m /r glyphshow
+grestore
+1.500 setlinewidth
+2 setlinecap
+0.000 0.000 1.000 setrgbcolor
+gsave
+357.12 266.112 57.6 38.016 clipbox
+73.832727 292.032 m
+74.456064 255.059412 l
+74.871622 249.500484 l
+74.914909 249.150236 l
+75.261207 242.404541 l
+75.330467 241.919279 l
+75.997091 228.016093 l
+76.412649 213.991148 l
+76.551168 208.93377 l
+76.966726 187.026117 l
+77.771869 117.803837 l
+77.841129 117.252432 l
+77.910388 104.961503 l
+77.979648 106.029968 l
+78.048908 105.284913 l
+78.118167 108.415887 l
+78.161455 98.178095 l
+78.230714 108.219407 l
+78.369233 97.63388 l
+78.507753 107.636675 l
+78.577012 88.829051 l
+78.646272 104.947665 l
+78.715532 101.48367 l
+78.784791 100.347668 l
+78.854051 95.443773 l
+78.923311 108.231896 l
+78.99257 93.706582 l
+79.06183 104.62011 l
+79.131089 93.794535 l
+79.200349 108.137404 l
+79.243636 105.099887 l
+79.312896 95.337563 l
+79.382156 100.931883 l
+79.520675 93.553523 l
+79.589935 102.636988 l
+79.659194 94.001035 l
+79.728454 107.856391 l
+79.797713 93.519416 l
+79.866973 103.684707 l
+79.936233 102.20669 l
+80.005492 96.748188 l
+80.074752 99.463959 l
+80.144012 95.274335 l
+80.213271 96.352623 l
+80.282531 95.546948 l
+80.325818 96.31576 l
+80.395078 91.001798 l
+80.533597 97.588029 l
+80.602857 95.104359 l
+80.672116 98.428348 l
+80.741376 96.441653 l
+80.810636 98.537687 l
+80.879895 95.645654 l
+80.949155 103.004562 l
+81.018415 102.275257 l
+81.156934 88.464074 l
+81.295453 105.267613 l
+81.47726 84.256971 l
+81.546519 89.370752 l
+81.615779 84.1018 l
+81.754298 98.82092 l
+81.823558 93.428768 l
+81.892817 101.698678 l
+81.962077 100.360226 l
+82.031337 86.133946 l
+82.100596 96.360247 l
+82.169856 91.618709 l
+82.239116 90.302578 l
+82.308375 109.371155 l
+82.377635 87.90659 l
+82.446895 91.310817 l
+82.559441 99.238757 l
+82.76722 90.671457 l
+82.83648 97.096954 l
+82.90574 94.103047 l
+82.974999 92.934881 l
+83.044259 103.709762 l
+83.113519 98.005061 l
+83.252038 87.7014 l
+83.390557 100.043513 l
+83.572364 88.840042 l
+83.710883 89.412554 l
+83.849402 99.529076 l
+84.057181 88.343873 l
+84.126441 89.176681 l
+84.26496 101.762845 l
+84.33422 99.415616 l
+84.403479 92.311754 l
+84.472739 108.129909 l
+84.541999 84.878198 l
+84.611258 91.697849 l
+84.723805 92.526496 l
+84.793065 99.040744 l
+84.862324 92.337512 l
+84.931584 107.07817 l
+85.000844 99.770184 l
+85.070103 96.810611 l
+85.139363 105.054878 l
+85.347142 83.425419 l
+85.416401 97.732142 l
+85.485661 93.568483 l
+85.554921 90.772976 l
+85.62418 99.73755 l
+85.69344 88.808177 l
+85.736727 92.235058 l
+85.805987 93.262486 l
+85.875247 79.544531 l
+85.944506 99.980435 l
+86.013766 92.270596 l
+86.083025 99.623256 l
+86.152285 98.075431 l
+86.290804 94.188615 l
+86.360064 94.669521 l
+86.429324 97.761818 l
+86.498583 88.752205 l
+86.567843 90.636817 l
+86.775622 98.212067 l
+86.888169 86.834827 l
+86.957428 95.75055 l
+87.026688 92.119574 l
+87.095948 89.527044 l
+87.165207 93.527133 l
+87.234467 89.262989 l
+87.303727 100.834564 l
+87.372986 89.725759 l
+87.442246 108.371702 l
+87.511505 98.957102 l
+87.580765 101.531711 l
+87.788544 86.46123 l
+87.901091 99.540396 l
+87.970351 89.294815 l
+88.10887 103.163126 l
+88.178129 102.033415 l
+88.247389 93.374009 l
+88.316649 101.778116 l
+88.385908 91.943613 l
+88.455168 96.20674 l
+88.524428 104.762039 l
+88.662947 94.469755 l
+88.732207 96.22363 l
+88.801466 84.672974 l
+88.870726 99.819378 l
+89.052532 84.223389 l
+89.260311 99.183498 l
+89.329571 98.988807 l
+89.398831 103.610074 l
+89.46809 100.336699 l
+89.53735 89.826387 l
+89.606609 92.405177 l
+89.675869 92.525409 l
+89.745129 82.966641 l
+89.952908 102.902248 l
+90.022167 89.269289 l
+90.065455 97.674462 l
+90.134714 89.972887 l
+90.203974 94.342855 l
+90.273233 93.731684 l
+90.342493 90.885797 l
+90.411753 80.771091 l
+90.481012 88.08828 l
+90.550272 86.133878 l
+90.619532 86.127084 l
+90.688791 102.097887 l
+90.758051 88.700999 l
+90.827311 97.205748 l
+90.89657 89.50668 l
+90.96583 99.520093 l
+91.035089 98.418185 l
+91.104349 101.491536 l
+91.286156 87.532521 l
+91.493935 94.53287 l
+91.632454 79.408938 l
+91.840233 96.45572 l
+91.909492 85.642508 l
+91.978752 98.022641 l
+92.048012 94.931811 l
+92.186531 82.591115 l
+92.229818 102.526312 l
+92.299078 89.425539 l
+92.437597 92.463542 l
+92.506857 99.014344 l
+92.576116 89.976346 l
+92.645376 91.815254 l
+92.714636 95.684993 l
+92.783895 88.668728 l
+92.853155 96.474572 l
+92.991674 84.221025 l
+93.060934 87.702101 l
+93.130193 76.260223 l
+93.268713 97.414922 l
+93.312 93.918338 l
+93.450519 83.537904 l
+93.519779 91.494589 l
+93.589039 88.555333 l
+93.658298 87.867246 l
+93.727558 91.04941 l
+93.796817 86.649557 l
+93.866077 104.410978 l
+93.935337 86.314795 l
+94.004596 89.619734 l
+94.073856 90.292665 l
+94.143116 86.439826 l
+94.212375 88.48159 l
+94.394182 105.203772 l
+94.532701 86.274875 l
+94.601961 90.148088 l
+94.67122 104.452886 l
+94.74048 95.867565 l
+94.878999 78.410693 l
+95.017519 94.691791 l
+95.156038 88.540795 l
+95.225297 89.725239 l
+95.294557 95.369991 l
+95.363817 92.080881 l
+95.433076 96.15008 l
+95.476364 94.526753 l
+95.614883 81.30516 l
+95.753402 96.241189 l
+95.961181 85.304626 l
+96.030441 89.976623 l
+96.0997 86.500532 l
+96.23822 90.50679 l
+96.307479 80.465718 l
+96.376739 85.545139 l
+96.445999 86.327084 l
+96.515258 97.305877 l
+96.558545 80.027918 l
+96.627805 91.270635 l
+96.697065 92.845883 l
+96.766324 86.587445 l
+96.835584 89.427685 l
+96.904844 95.190004 l
+96.974103 86.475242 l
+97.043363 92.863581 l
+97.112623 83.733836 l
+97.320401 96.896641 l
+97.389661 93.695984 l
+97.458921 97.837897 l
+97.640727 88.896737 l
+97.709987 94.184582 l
+97.779247 92.373167 l
+97.917766 86.833348 l
+97.987025 76.284365 l
+98.056285 79.707727 l
+98.194804 90.76313 l
+98.333324 85.290729 l
+98.402583 86.984919 l
+98.471843 90.302701 l
+98.541103 81.622199 l
+98.610362 100.830329 l
+98.679622 87.463662 l
+98.722909 90.327666 l
+98.861428 92.824753 l
+98.930688 92.712721 l
+98.999948 75.519324 l
+99.069207 82.15833 l
+99.138467 89.185535 l
+99.207727 87.149118 l
+99.276986 83.87595 l
+99.346246 84.767222 l
+99.415505 83.454747 l
+99.484765 94.492869 l
+99.554025 85.309751 l
+99.623284 88.708125 l
+99.692544 90.405019 l
+99.874351 85.986004 l
+99.94361 94.720276 l
+100.082129 83.74491 l
+100.151389 95.39136 l
+100.220649 83.05884 l
+100.289908 94.567749 l
+100.359168 84.332134 l
+100.428428 99.11928 l
+100.497687 97.212885 l
+100.636207 74.643864 l
+100.887273 91.750209 l
+100.956532 91.217187 l
+101.025792 87.769238 l
+101.095052 88.902735 l
+101.164311 91.936765 l
+101.37209 85.373138 l
+101.44135 96.281933 l
+101.579869 79.380135 l
+101.649129 90.68972 l
+101.718388 89.347668 l
+101.856908 83.205445 l
+101.926167 86.098386 l
+102.107974 95.417367 l
+102.177233 92.819082 l
+102.246493 92.929768 l
+102.315753 86.490279 l
+102.385012 90.569315 l
+102.523532 81.16529 l
+102.731311 91.679049 l
+102.80057 87.392705 l
+102.86983 91.48702 l
+103.008349 84.078998 l
+103.051636 86.653299 l
+103.120896 90.362076 l
+103.328675 77.35489 l
+103.397935 79.320988 l
+103.536454 91.617358 l
+103.674973 80.151686 l
+103.813492 92.026437 l
+103.882752 85.324211 l
+103.952012 88.482596 l
+104.021271 92.119387 l
+104.090531 75.877294 l
+104.133818 81.696972 l
+104.203078 87.256944 l
+104.272337 82.563047 l
+104.341597 88.735583 l
+104.480116 74.578976 l
+104.549376 87.376146 l
+104.618636 80.745849 l
+104.687895 83.35219 l
+104.826415 78.847046 l
+104.895674 83.507054 l
+104.964934 99.973608 l
+105.034193 91.104458 l
+105.103453 81.69169 l
+105.172713 86.847684 l
+105.216 87.373239 l
+105.28526 95.44102 l
+105.354519 83.509662 l
+105.423779 90.127977 l
+105.631558 80.334662 l
+105.700817 90.761814 l
+105.770077 89.492062 l
+105.839337 75.359578 l
+105.908596 78.846092 l
+105.977856 87.887916 l
+106.047116 81.465519 l
+106.116375 84.617091 l
+106.185635 89.631812 l
+106.298182 79.360239 l
+106.367441 88.981176 l
+106.505961 78.519035 l
+106.64448 94.319129 l
+106.921519 82.207904 l
+106.990778 88.464064 l
+107.060038 87.926867 l
+107.198557 79.880751 l
+107.267817 82.153729 l
+107.337076 77.332797 l
+107.380364 81.09134 l
+107.518883 90.048803 l
+107.588143 82.075817 l
+107.657402 89.865152 l
+107.726662 74.71176 l
+107.795921 79.321898 l
+107.865181 81.351188 l
+107.934441 78.74797 l
+108.07296 88.855446 l
+108.211479 73.004603 l
+108.280739 92.088935 l
+108.349999 85.48393 l
+108.419258 87.944112 l
+108.531805 79.592309 l
+108.601065 85.430597 l
+108.670324 75.653465 l
+108.739584 84.112388 l
+108.808844 82.445272 l
+108.878103 84.85155 l
+108.947363 80.541985 l
+109.085882 86.553471 l
+109.155142 86.377371 l
+109.224401 69.441342 l
+109.293661 92.913854 l
+109.362921 89.41489 l
+109.544727 81.352183 l
+109.683247 79.823446 l
+109.752506 86.234559 l
+109.821766 83.586157 l
+109.960285 95.464614 l
+110.098804 79.522648 l
+110.168064 87.746438 l
+110.237324 80.742134 l
+110.306583 81.761667 l
+110.445103 95.659719 l
+110.626909 74.151148 l
+110.696169 85.463374 l
+110.765428 82.426644 l
+110.834688 81.8949 l
+110.903948 72.740665 l
+110.973207 79.591152 l
+111.042467 77.246637 l
+111.111727 81.328814 l
+111.180986 72.697794 l
+111.388765 90.480668 l
+111.458025 71.072115 l
+111.527284 74.734464 l
+111.596544 77.208664 l
+111.665804 100.454182 l
+111.709091 84.311516 l
+111.91687 74.892577 l
+112.055389 87.056722 l
+112.263168 75.845399 l
+112.332428 76.452227 l
+112.401687 70.087789 l
+112.540207 84.614681 l
+112.609466 73.600665 l
+112.747985 82.764021 l
+112.860532 77.172209 l
+112.999052 83.473419 l
+113.137571 76.958168 l
+113.27609 86.804011 l
+113.34535 70.089732 l
+113.414609 78.99147 l
+113.483869 68.849203 l
+113.553129 86.552145 l
+113.622388 78.464523 l
+113.760908 85.935905 l
+113.942714 80.481081 l
+114.011974 90.234839 l
+114.150493 71.035485 l
+114.219753 79.644033 l
+114.289012 86.284116 l
+114.358272 77.958997 l
+114.427532 88.81763 l
+114.496791 85.668767 l
+114.566051 85.406162 l
+114.635311 84.117602 l
+114.70457 85.985884 l
+114.77383 70.246341 l
+114.843089 92.548592 l
+114.912349 80.502895 l
+114.955636 92.642186 l
+115.024896 76.116104 l
+115.094156 84.281207 l
+115.163415 81.063549 l
+115.232675 101.154994 l
+115.301935 76.692986 l
+115.371194 87.088596 l
+115.440454 77.138381 l
+115.509713 79.957416 l
+115.648233 83.946627 l
+115.717492 76.037463 l
+115.786752 87.128118 l
+115.856012 79.055132 l
+115.925271 87.390988 l
+115.994531 86.242053 l
+116.245597 73.301257 l
+116.384116 85.520885 l
+116.522636 71.246801 l
+116.591895 75.530744 l
+116.730415 85.797565 l
+116.868934 73.862501 l
+117.007453 85.695054 l
+117.18926 70.759346 l
+117.327779 81.151061 l
+117.397039 77.601866 l
+117.466298 83.251278 l
+117.535558 82.508522 l
+117.743337 72.540481 l
+117.812596 86.634358 l
+117.951116 70.192065 l
+118.020375 82.937488 l
+118.089635 79.566664 l
+118.158895 81.969186 l
+118.202182 79.97713 l
+118.271441 71.115153 l
+118.47922 91.83663 l
+118.61774 71.102172 l
+118.686999 80.69921 l
+118.756259 89.800011 l
+118.825519 76.365852 l
+119.033297 90.128943 l
+119.102557 77.402962 l
+119.171817 80.535067 l
+119.241076 78.764672 l
+119.284364 74.330139 l
+119.353623 84.658993 l
+119.422883 84.124972 l
+119.561402 82.562592 l
+119.630662 76.679248 l
+119.699921 89.015859 l
+119.769181 87.089678 l
+119.838441 78.635251 l
+119.9077 78.775881 l
+119.97696 82.743779 l
+120.04622 81.171393 l
+120.115479 80.41128 l
+120.184739 69.321647 l
+120.253999 85.082311 l
+120.323258 79.356467 l
+120.366545 73.193321 l
+120.435805 75.432699 l
+120.505065 88.459258 l
+120.574324 83.428206 l
+120.643584 76.866522 l
+120.712844 85.36635 l
+120.782103 76.45296 l
+120.851363 78.183135 l
+120.920623 77.8637 l
+120.989882 79.947892 l
+121.059142 78.655422 l
+121.128401 80.78723 l
+121.266921 92.586132 l
+121.33618 74.654253 l
+121.40544 83.878585 l
+121.448727 89.178496 l
+121.517987 76.521611 l
+121.587247 77.398699 l
+121.656506 72.989679 l
+121.864285 88.70397 l
+122.210583 66.509212 l
+122.279843 69.679981 l
+122.418362 76.172047 l
+122.487622 74.775887 l
+122.669428 88.325834 l
+122.738688 76.904266 l
+122.807948 81.458036 l
+122.877207 73.021906 l
+123.015727 86.715546 l
+123.084986 70.457017 l
+123.292765 86.536046 l
+123.431284 78.28175 l
+123.500544 79.871318 l
+123.569804 74.211785 l
+123.613091 82.322628 l
+123.682351 77.97056 l
+123.75161 71.138326 l
+123.82087 80.095637 l
+123.890129 77.966538 l
+123.959389 72.137471 l
+124.097908 85.636443 l
+124.167168 82.136953 l
+124.305687 80.091824 l
+124.374947 79.447434 l
+124.444207 72.520019 l
+124.833792 92.144536 l
+124.903052 81.149664 l
+124.972311 82.259292 l
+125.18009 74.640305 l
+125.24935 79.892142 l
+125.318609 78.185319 l
+125.387869 76.093182 l
+125.457129 78.853414 l
+125.595648 75.339646 l
+125.664908 77.853363 l
+125.777455 87.760569 l
+125.915974 79.070511 l
+125.985233 79.776863 l
+126.054493 78.053935 l
+126.193012 81.79899 l
+126.331532 78.745437 l
+126.400791 66.125832 l
+126.470051 71.52113 l
+126.539311 90.13542 l
+126.60857 82.579487 l
+126.747089 73.976076 l
+126.816349 80.016478 l
+126.859636 72.171215 l
+126.928896 76.882996 l
+127.067415 89.063089 l
+127.205935 69.935824 l
+127.275194 73.765763 l
+127.344454 84.626819 l
+127.413713 80.130165 l
+127.482973 84.338869 l
+127.552233 74.939488 l
+127.621492 74.99687 l
+127.690752 92.353311 l
+127.760012 84.575619 l
+127.829271 80.163455 l
+127.898531 85.994294 l
+127.941818 81.767093 l
+128.080337 88.875337 l
+128.149597 87.649784 l
+128.218857 82.086741 l
+128.288116 85.519293 l
+128.357376 80.08192 l
+128.426636 63.380478 l
+128.495895 80.146808 l
+128.565155 79.612773 l
+128.634415 83.652166 l
+128.842193 74.809202 l
+128.911453 76.140841 l
+128.980713 77.848105 l
+129.09326 92.412374 l
+129.162519 74.624164 l
+129.231779 80.851215 l
+129.301039 84.684126 l
+129.370298 74.618821 l
+129.439558 79.366735 l
+129.508817 83.367581 l
+129.578077 71.688923 l
+129.716596 85.435727 l
+129.785856 79.3822 l
+129.855116 89.880589 l
+129.924375 88.043705 l
+129.993635 82.19782 l
+130.175441 97.139053 l
+130.244701 79.651755 l
+130.313961 87.500365 l
+130.52174 71.304869 l
+130.729519 82.854327 l
+130.798778 80.674733 l
+130.868038 82.203372 l
+130.937297 89.103121 l
+131.006557 74.248958 l
+131.075817 78.584149 l
+131.145076 87.726154 l
+131.188364 80.096485 l
+131.257623 77.462633 l
+131.326883 81.497819 l
+131.396143 79.191189 l
+131.465402 79.50996 l
+131.534662 76.663455 l
+131.603921 78.404286 l
+131.673181 70.587117 l
+131.8117 82.632686 l
+131.88096 68.53823 l
+131.95022 78.326992 l
+132.019479 78.037228 l
+132.227258 82.096959 l
+132.270545 70.120769 l
+132.339805 82.321553 l
+132.409065 79.239367 l
+132.478324 76.396688 l
+132.547584 86.712446 l
+132.686103 78.079652 l
+132.755363 80.36288 l
+132.824623 80.237829 l
+132.893882 79.602788 l
+132.963142 71.697464 l
+133.101661 79.276118 l
+133.170921 70.903085 l
+133.30944 82.376591 l
+133.352727 73.972115 l
+133.421987 76.928502 l
+133.491247 82.743804 l
+133.699025 71.380267 l
+133.837545 81.126545 l
+133.906804 75.414955 l
+133.976064 84.583055 l
+134.045324 81.67974 l
+134.114583 72.622464 l
+134.183843 76.795935 l
+134.253103 72.94031 l
+134.391622 81.579147 l
+134.573428 70.884957 l
+134.781207 94.587878 l
+134.919727 81.943659 l
+134.988986 80.353384 l
+135.058246 94.432031 l
+135.266025 76.198502 l
+135.335284 83.626641 l
+135.404544 83.6129 l
+135.473804 79.356359 l
+135.517091 84.345099 l
+135.65561 70.879506 l
+135.72487 84.193475 l
+135.794129 75.134503 l
+135.863389 77.534248 l
+135.932649 78.791164 l
+136.140428 74.701435 l
+136.348207 86.438849 l
+136.555985 67.221972 l
+136.599273 80.197442 l
+136.668532 72.14131 l
+136.737792 82.555251 l
+136.807052 70.781268 l
+136.876311 73.959459 l
+136.945571 80.463791 l
+137.08409 75.232691 l
+137.15335 81.95868 l
+137.222609 70.542176 l
+137.291869 78.641281 l
+137.361129 72.747394 l
+137.430388 77.491554 l
+137.499648 76.546406 l
+137.568908 62.027305 l
+137.750714 83.333095 l
+137.819974 77.793833 l
+137.889233 82.95218 l
+138.097012 73.002801 l
+138.166272 73.752078 l
+138.235532 85.640902 l
+138.304791 79.658026 l
+138.374051 81.046655 l
+138.443311 78.873105 l
+138.51257 83.043726 l
+138.58183 81.888343 l
+138.763636 70.384772 l
+138.902156 105.026387 l
+138.971415 76.014508 l
+139.040675 89.465368 l
+139.179194 81.582677 l
+139.248454 84.938873 l
+139.317713 75.213383 l
+139.456233 85.752352 l
+139.525492 74.10413 l
+139.594752 74.176735 l
+139.664012 75.322351 l
+139.733271 80.129347 l
+139.915078 72.839968 l
+139.984337 82.728227 l
+140.053597 81.242911 l
+140.122857 74.193228 l
+140.192116 74.990709 l
+140.261376 85.04842 l
+140.330636 80.258125 l
+140.399895 80.199509 l
+140.538415 66.45204 l
+140.607674 82.617479 l
+140.676934 82.509145 l
+140.746193 72.833983 l
+140.815453 83.267669 l
+140.884713 69.747113 l
+140.928 76.432674 l
+140.99726 77.708273 l
+141.066519 73.089245 l
+141.135779 87.945773 l
+141.205039 83.893101 l
+141.274298 82.725289 l
+141.343558 83.381966 l
+141.412817 75.464501 l
+141.482077 86.509507 l
+141.689856 67.769205 l
+141.828375 82.905079 l
+141.897635 80.939601 l
+141.966895 82.493296 l
+142.010182 78.59468 l
+142.079441 83.357133 l
+142.148701 77.221255 l
+142.217961 79.977169 l
+142.35648 75.338043 l
+142.42574 76.272376 l
+142.494999 78.837938 l
+142.564259 67.073524 l
+142.702778 78.222112 l
+142.772038 67.599009 l
+142.979817 83.471289 l
+143.092364 74.298335 l
+143.161623 83.07694 l
+143.230883 79.808055 l
+143.438662 69.173866 l
+143.507921 71.856989 l
+143.577181 86.255359 l
+143.646441 81.248989 l
+143.7157 73.312552 l
+143.78496 78.336547 l
+143.85422 70.44854 l
+143.923479 71.126731 l
+144.061999 80.368681 l
+144.243805 70.756469 l
+144.382324 89.355961 l
+144.590103 69.522336 l
+144.659363 78.870866 l
+144.728623 77.649948 l
+144.797882 78.502868 l
+144.867142 76.285766 l
+144.936401 68.414475 l
+145.005661 71.621461 l
+145.074921 76.334718 l
+145.14418 72.218677 l
+145.21344 75.733918 l
+145.256727 71.839358 l
+145.395247 90.437482 l
+145.464506 83.913362 l
+145.533766 90.787655 l
+145.603025 76.652385 l
+145.672285 82.643314 l
+145.741545 85.93724 l
+145.810804 84.507459 l
+145.880064 75.958163 l
+145.949324 85.223605 l
+146.018583 75.227201 l
+146.087843 90.843215 l
+146.226362 72.318749 l
+146.295622 78.671731 l
+146.338909 72.149959 l
+146.408169 82.707559 l
+146.546688 72.317973 l
+146.823727 92.126016 l
+147.031505 77.637188 l
+147.100765 77.283636 l
+147.170025 73.251434 l
+147.239284 82.964104 l
+147.308544 75.667183 l
+147.377804 76.352748 l
+147.421091 79.923744 l
+147.490351 71.456854 l
+147.62887 80.421384 l
+147.767389 77.720063 l
+147.836649 67.03283 l
+147.905908 79.712705 l
+147.975168 65.894563 l
+148.113687 89.334205 l
+148.182947 77.950983 l
+148.252207 86.733514 l
+148.321466 85.306069 l
+148.390726 79.369502 l
+148.572532 93.962864 l
+148.711052 75.120644 l
+148.780311 79.716146 l
+148.98809 68.40369 l
+149.05735 75.567113 l
+149.126609 98.105949 l
+149.195869 81.540126 l
+149.265129 83.958271 l
+149.334388 84.480516 l
+149.542167 77.980906 l
+149.654714 78.800313 l
+149.793233 76.657336 l
+149.862493 73.213706 l
+149.931753 81.664522 l
+150.070272 70.078581 l
+150.139532 73.954081 l
+150.208791 84.069439 l
+150.278051 67.099443 l
+150.48583 82.639379 l
+150.555089 83.038887 l
+150.667636 72.364048 l
+150.736896 76.051734 l
+150.875415 70.334625 l
+151.013935 80.667296 l
+151.083194 79.400359 l
+151.152454 80.869324 l
+151.221713 80.631955 l
+151.290973 77.713884 l
+151.360233 85.989943 l
+151.429492 75.645647 l
+151.498752 79.930996 l
+151.568012 73.495129 l
+151.637271 88.643306 l
+151.706531 81.141854 l
+151.749818 77.574366 l
+151.819078 84.599226 l
+151.888337 70.855241 l
+151.957597 81.213458 l
+152.026857 68.115759 l
+152.096116 79.846384 l
+152.165376 77.967772 l
+152.234636 82.477937 l
+152.303895 74.506691 l
+152.373155 79.022813 l
+152.511674 82.781238 l
+152.580934 73.040141 l
+152.650193 88.949348 l
+152.719453 79.562435 l
+152.788713 84.476107 l
+152.832 82.728291 l
+152.90126 76.014257 l
+152.970519 84.132682 l
+153.039779 75.873608 l
+153.109039 77.76086 l
+153.178298 85.604696 l
+153.316817 66.877857 l
+153.455337 79.035922 l
+153.593856 64.494272 l
+153.663116 75.848128 l
+153.732375 69.725608 l
+154.052701 86.551223 l
+154.121961 86.081405 l
+154.26048 63.492935 l
+154.468259 76.600138 l
+154.676038 83.118431 l
+154.745297 72.292094 l
+154.814557 76.876113 l
+154.883817 85.003746 l
+154.996364 72.400075 l
+155.065623 73.926029 l
+155.204143 70.006605 l
+155.273402 74.326821 l
+155.411921 66.19572 l
+155.550441 79.452587 l
+155.6197 79.925994 l
+155.68896 76.545834 l
+155.75822 83.191246 l
+155.827479 71.855778 l
+155.896739 71.97237 l
+155.965999 79.034027 l
+156.035258 76.583342 l
+156.078545 75.420328 l
+156.147805 79.489518 l
+156.217065 71.558985 l
+156.286324 78.417702 l
+156.355584 72.13937 l
+156.424844 83.776157 l
+156.494103 78.656629 l
+156.563363 67.278328 l
+156.632623 78.111298 l
+156.701882 77.20992 l
+156.771142 82.142362 l
+156.978921 64.846356 l
+157.229987 85.431081 l
+157.299247 78.420565 l
+157.368506 78.125745 l
+157.437766 75.841504 l
+157.645545 62.635775 l
+157.714804 82.765735 l
+157.784064 75.174702 l
+157.853324 78.018464 l
+157.922583 89.064903 l
+157.991843 67.214034 l
+158.061103 77.632491 l
+158.130362 68.103365 l
+158.199622 71.832866 l
+158.242909 78.493271 l
+158.312169 71.918769 l
+158.381428 75.071242 l
+158.450688 73.429165 l
+158.519948 84.003722 l
+158.589207 74.077223 l
+158.658467 79.199324 l
+158.796986 72.353658 l
+158.866246 66.47751 l
+159.004765 81.646991 l
+159.074025 89.109206 l
+159.394351 67.335452 l
+159.46361 67.666665 l
+159.53287 83.463468 l
+159.602129 82.687823 l
+159.671389 82.771846 l
+159.809908 67.771057 l
+159.879168 80.939982 l
+159.948428 76.318128 l
+160.017687 67.557406 l
+160.086947 77.854311 l
+160.156207 71.870392 l
+160.225466 77.079035 l
+160.294726 70.622487 l
+160.363985 76.937668 l
+160.407273 74.505672 l
+160.476532 72.784156 l
+160.545792 76.589482 l
+160.684311 67.733784 l
+160.753571 81.755662 l
+160.822831 76.94412 l
+160.96135 78.22657 l
+161.169129 66.564478 l
+161.376908 86.076729 l
+161.558714 73.991406 l
+161.627974 85.149034 l
+161.766493 71.640608 l
+161.835753 86.262927 l
+161.974272 65.17817 l
+162.043532 67.416679 l
+162.112791 82.900612 l
+162.182051 75.151258 l
+162.251311 80.336484 l
+162.32057 78.797252 l
+162.38983 79.885907 l
+162.459089 69.369654 l
+162.571636 86.710714 l
+162.640896 77.474725 l
+162.779415 68.002224 l
+162.848675 81.887467 l
+162.917935 75.471057 l
+162.987194 71.826465 l
+163.194973 76.817904 l
+163.264233 72.383943 l
+163.333492 81.091414 l
+163.402752 76.765373 l
+163.472012 70.03849 l
+163.653818 86.423048 l
+163.723078 70.603206 l
+163.792337 77.078405 l
+163.861597 69.830244 l
+164.000116 83.598701 l
+164.138636 59.330602 l
+164.207895 70.420916 l
+164.415674 76.909355 l
+164.484934 73.068727 l
+164.554193 76.983674 l
+164.623453 70.088809 l
+164.736 87.130038 l
+164.943779 66.588506 l
+165.220817 81.28814 l
+165.290077 79.507046 l
+165.359337 66.741037 l
+165.567116 85.445616 l
+165.774895 69.6615 l
+165.887441 74.902957 l
+165.956701 68.546102 l
+166.025961 74.301389 l
+166.09522 72.696871 l
+166.16448 75.234137 l
+166.23374 70.615069 l
+166.302999 72.228383 l
+166.372259 72.221037 l
+166.510778 70.006542 l
+166.718557 77.697607 l
+166.787817 74.270195 l
+166.857076 87.548725 l
+166.900364 77.254007 l
+166.969623 78.27728 l
+167.177402 70.88823 l
+167.315921 78.652382 l
+167.385181 69.714463 l
+167.5237 76.172492 l
+167.59296 64.999714 l
+167.66222 72.340768 l
+167.731479 71.345685 l
+167.800739 74.414233 l
+167.939258 66.172735 l
+167.982545 83.352933 l
+168.051805 67.978797 l
+168.259584 80.602334 l
+168.328844 75.51508 l
+168.398103 80.144243 l
+168.467363 70.844173 l
+168.536623 74.620053 l
+168.605882 75.270024 l
+168.675142 72.712987 l
+168.744401 83.600013 l
+168.813661 79.569155 l
+168.95218 70.837677 l
+169.02144 66.639653 l
+169.064727 71.511051 l
+169.133987 70.341241 l
+169.203247 67.938414 l
+169.341766 73.017411 l
+169.411025 71.849922 l
+169.480285 80.075788 l
+169.549545 77.156715 l
+169.618804 78.106306 l
+169.688064 83.017563 l
+169.757324 80.274575 l
+169.895843 72.331574 l
+169.965103 77.421311 l
+170.034362 76.090109 l
+170.103622 78.655816 l
+170.146909 71.305477 l
+170.216169 81.109531 l
+170.285428 72.089962 l
+170.354688 74.914392 l
+170.423948 68.598225 l
+170.562467 81.739874 l
+170.631727 71.591794 l
+170.700986 75.379736 l
+170.908765 66.026625 l
+171.047284 74.301977 l
+171.116544 90.632763 l
+171.229091 66.60987 l
+171.298351 68.927949 l
+171.43687 77.966367 l
+171.506129 71.985509 l
+171.575389 82.339742 l
+171.644649 76.519522 l
+171.713908 76.732254 l
+171.783168 66.22243 l
+171.921687 78.496655 l
+171.990947 80.667715 l
+172.198726 61.545851 l
+172.380532 77.042925 l
+172.588311 63.086159 l
+172.79609 82.825485 l
+172.86535 69.630004 l
+172.934609 78.873017 l
+173.003869 65.153681 l
+173.073129 78.768762 l
+173.142388 69.636684 l
+173.211648 70.678854 l
+173.280908 66.344769 l
+173.350167 76.295684 l
+173.393455 74.760569 l
+173.462714 73.21142 l
+173.531974 76.087534 l
+173.670493 67.740237 l
+173.739753 73.697011 l
+173.809012 67.656969 l
+173.947532 76.521665 l
+174.22457 66.033847 l
+174.432349 82.72942 l
+174.614156 60.783623 l
+174.752675 76.961962 l
+174.821935 72.643218 l
+175.029713 80.662078 l
+175.237492 63.875254 l
+175.306752 77.903486 l
+175.376012 60.689214 l
+175.445271 74.014242 l
+175.514531 62.689796 l
+175.557818 69.762653 l
+175.627078 79.663326 l
+175.834857 67.62002 l
+175.973376 76.317257 l
+176.042636 74.914789 l
+176.181155 65.185619 l
+176.319674 74.831469 l
+176.388934 69.2108 l
+176.458193 76.915993 l
+176.527453 75.483111 l
+176.596713 75.375153 l
+176.778519 64.101231 l
+176.917039 70.915088 l
+176.986298 71.460573 l
+177.194077 63.491864 l
+177.401856 80.419534 l
+177.471116 65.91188 l
+177.540375 68.097228 l
+177.678895 81.986401 l
+177.722182 72.493031 l
+177.791441 80.798656 l
+177.929961 65.763245 l
+177.99922 69.409645 l
+178.06848 64.514118 l
+178.13774 68.636225 l
+178.206999 82.072413 l
+178.276259 67.525344 l
+178.345519 76.072969 l
+178.414778 72.002584 l
+178.484038 79.582599 l
+178.553297 70.14177 l
+178.622557 72.148438 l
+178.691817 68.564387 l
+178.761076 74.053369 l
+178.804364 66.845746 l
+178.873623 69.825635 l
+178.942883 76.880054 l
+179.012143 69.672295 l
+179.150662 84.641343 l
+179.219921 79.602836 l
+179.289181 77.820152 l
+179.358441 67.284005 l
+179.4277 70.5161 l
+179.49696 69.804752 l
+179.56622 76.259125 l
+179.635479 61.981397 l
+179.704739 76.427186 l
+179.773999 76.190985 l
+179.843258 80.419401 l
+179.886545 77.230562 l
+179.955805 77.996941 l
+180.163584 62.266494 l
+180.232844 80.49221 l
+180.302103 79.482209 l
+180.371363 69.269275 l
+180.440623 77.082101 l
+180.579142 66.55434 l
+180.648401 66.971574 l
+180.85618 70.835164 l
+181.037987 65.40035 l
+181.107247 77.444102 l
+181.245766 58.838953 l
+181.384285 75.418236 l
+181.522804 65.633258 l
+181.592064 66.897458 l
+181.661324 74.608278 l
+181.730583 59.362988 l
+181.869103 73.060473 l
+181.938362 71.525854 l
+182.007622 64.247901 l
+182.050909 68.372059 l
+182.120169 67.113143 l
+182.327948 76.260286 l
+182.466467 63.514131 l
+182.535727 76.106405 l
+182.604986 72.708069 l
+182.674246 64.515817 l
+182.743505 70.787768 l
+182.812765 68.389654 l
+182.882025 67.43448 l
+182.951284 63.37867 l
+183.020544 65.741633 l
+183.089804 75.634408 l
+183.133091 73.796664 l
+183.202351 71.72791 l
+183.27161 81.320102 l
+183.34087 71.622384 l
+183.410129 80.053399 l
+183.548649 67.150338 l
+183.617908 67.210231 l
+183.964207 76.936109 l
+184.033466 64.470093 l
+184.102726 71.84511 l
+184.171985 62.649379 l
+184.215273 68.582181 l
+184.284532 73.856728 l
+184.353792 64.060909 l
+184.492311 77.373302 l
+184.561571 59.901422 l
+184.630831 71.416643 l
+184.70009 68.014574 l
+184.76935 74.643393 l
+184.838609 68.268198 l
+184.907869 76.636969 l
+184.977129 64.826428 l
+185.046388 73.971155 l
+185.115648 65.413161 l
+185.184908 70.121508 l
+185.297455 62.462526 l
+185.366714 70.715699 l
+185.505233 56.765492 l
+185.574493 70.881871 l
+185.643753 65.646257 l
+185.713012 64.774384 l
+185.782272 65.871348 l
+185.851532 62.242374 l
+185.990051 71.472025 l
+186.059311 71.207513 l
+186.12857 61.93433 l
+186.19783 66.506409 l
+186.448896 77.981617 l
+186.587415 71.60101 l
+186.656675 72.855856 l
+186.725935 65.494339 l
+186.795194 69.17134 l
+186.864454 66.184726 l
+186.933713 67.266016 l
+187.072233 71.051012 l
+187.141492 68.193902 l
+187.210752 72.462819 l
+187.349271 65.549049 l
+187.418531 63.106937 l
+187.461818 64.220157 l
+187.531078 68.782419 l
+187.600337 64.179518 l
+187.669597 71.229035 l
+187.738857 62.61513 l
+187.808116 64.802911 l
+187.946636 73.717581 l
+188.085155 69.783742 l
+188.154415 70.324967 l
+188.223674 74.19782 l
+188.292934 71.658381 l
+188.362193 74.123519 l
+188.544 63.192992 l
+188.682519 70.422256 l
+188.751779 62.964257 l
+188.821039 70.568153 l
+188.890298 68.649652 l
+188.959558 64.650699 l
+189.028817 72.404637 l
+189.098077 71.277727 l
+189.167337 72.26703 l
+189.305856 53.860011 l
+189.375116 61.040072 l
+189.582895 71.193468 l
+189.695441 65.519064 l
+189.764701 66.169522 l
+189.833961 68.320194 l
+189.90322 75.047157 l
+190.04174 67.744156 l
+190.180259 65.284374 l
+190.249519 71.606739 l
+190.388038 64.702816 l
+190.595817 77.480817 l
+190.665076 59.634033 l
+190.708364 67.768904 l
+190.777623 77.674004 l
+190.985402 62.829117 l
+191.054662 70.114843 l
+191.123921 68.217007 l
+191.193181 68.154997 l
+191.262441 71.315809 l
+191.3317 63.488622 l
+191.40096 63.640909 l
+191.47022 72.037137 l
+191.539479 68.930371 l
+191.608739 67.031453 l
+191.677999 76.257575 l
+191.747258 68.089551 l
+191.790545 76.576365 l
+191.859805 66.6997 l
+191.929065 74.981472 l
+192.067584 62.184827 l
+192.136844 67.872721 l
+192.206103 63.892157 l
+192.275363 74.142225 l
+192.344623 58.974557 l
+192.413882 69.808783 l
+192.483142 53.632646 l
+192.621661 73.402689 l
+192.690921 69.987268 l
+192.76018 65.596836 l
+192.82944 66.683819 l
+192.872727 65.536307 l
+193.149766 70.718759 l
+193.219025 61.851356 l
+193.288285 72.445849 l
+193.357545 54.337713 l
+193.426804 74.81244 l
+193.496064 70.179259 l
+193.565324 73.497994 l
+193.703843 65.728364 l
+193.773103 70.538489 l
+193.842362 66.123281 l
+194.024169 78.436577 l
+194.093428 67.79172 l
+194.162688 78.556733 l
+194.231948 65.160572 l
+194.301207 70.617879 l
+194.370467 74.672079 l
+194.439727 65.547988 l
+194.508986 74.912394 l
+194.578246 59.577521 l
+194.647505 65.740471 l
+194.786025 73.478417 l
+194.855284 65.737854 l
+194.924544 68.089787 l
+195.17561 74.838938 l
+195.24487 67.386819 l
+195.314129 74.764094 l
+195.383389 66.924505 l
+195.452649 67.839793 l
+195.521908 78.684682 l
+195.591168 63.943383 l
+195.660428 65.309814 l
+195.729687 63.710724 l
+195.798947 71.660612 l
+195.868207 71.580409 l
+196.006726 60.980014 l
+196.075985 69.435046 l
+196.119273 68.483709 l
+196.327052 72.145657 l
+196.396311 71.01709 l
+196.465571 66.438693 l
+196.534831 68.134258 l
+196.67335 73.779675 l
+196.811869 62.373827 l
+196.881129 65.542507 l
+197.019648 73.085578 l
+197.088908 70.815989 l
+197.158167 72.049227 l
+197.201455 74.037715 l
+197.339974 65.535146 l
+197.409233 71.262941 l
+197.478493 60.819119 l
+197.547753 61.044403 l
+197.686272 70.049965 l
+197.755532 71.019309 l
+197.824791 70.318589 l
+197.894051 67.690947 l
+197.963311 75.124481 l
+198.03257 68.138301 l
+198.10183 73.908133 l
+198.171089 73.171884 l
+198.240349 70.341186 l
+198.283636 72.957087 l
+198.352896 74.019497 l
+198.629935 59.898233 l
+198.837713 72.085318 l
+198.906973 64.337571 l
+199.114752 85.473552 l
+199.253271 67.512983 l
+199.365818 70.381676 l
+199.435078 61.470325 l
+199.504337 68.485594 l
+199.573597 62.420624 l
+199.781376 75.967815 l
+199.850636 70.562141 l
+199.919895 70.70112 l
+199.989155 75.301623 l
+200.058415 70.531174 l
+200.127674 75.355909 l
+200.196934 74.694997 l
+200.448 62.368528 l
+200.51726 71.505897 l
+200.586519 66.072129 l
+200.655779 73.819401 l
+200.725039 66.888087 l
+200.794298 69.909864 l
+200.932817 63.116536 l
+201.071337 71.258531 l
+201.140596 62.566257 l
+201.209856 74.959662 l
+201.279116 63.444959 l
+201.417635 74.122208 l
+201.486895 71.485607 l
+201.530182 82.603026 l
+201.599441 67.535904 l
+201.668701 71.394517 l
+201.737961 80.985309 l
+201.80722 69.832799 l
+201.87648 80.903156 l
+201.94574 59.819831 l
+202.014999 68.064794 l
+202.153519 62.110452 l
+202.292038 73.230809 l
+202.361297 71.651248 l
+202.430557 75.061474 l
+202.569076 60.821201 l
+202.612364 74.769404 l
+202.681623 70.1945 l
+202.750883 73.444195 l
+202.820143 72.823015 l
+202.889402 70.488963 l
+202.958662 76.801491 l
+203.097181 65.212481 l
+203.2357 69.483441 l
+203.30496 68.999195 l
+203.37422 73.158192 l
+203.512739 68.772166 l
+203.581999 71.01867 l
+203.694545 68.266023 l
+203.763805 70.626557 l
+203.902324 62.907879 l
+203.971584 65.044408 l
+204.040844 76.238975 l
+204.110103 70.117057 l
+204.179363 65.542093 l
+204.248623 75.237064 l
+204.317882 61.353459 l
+204.387142 66.17467 l
+204.525661 74.098845 l
+204.66418 64.098925 l
+204.73344 77.494815 l
+204.776727 72.55373 l
+204.845987 63.357408 l
+204.915247 63.855112 l
+204.984506 63.305852 l
+205.053766 76.885674 l
+205.123025 65.095349 l
+205.192285 71.044342 l
+205.400064 64.213173 l
+205.469324 73.313421 l
+205.538583 72.549301 l
+205.607843 74.314298 l
+205.677103 64.923193 l
+205.746362 76.273144 l
+205.815622 73.212428 l
+205.858909 61.385851 l
+205.928169 62.158974 l
+205.997428 68.346664 l
+206.066688 64.426947 l
+206.274467 76.838491 l
+206.343727 65.27629 l
+206.412986 74.382488 l
+206.482246 69.288414 l
+206.690025 75.593023 l
+206.759284 70.517182 l
+206.828544 80.126892 l
+206.897804 69.397398 l
+206.941091 75.158722 l
+207.010351 75.154012 l
+207.07961 66.153514 l
+207.14887 72.879002 l
+207.356649 60.628792 l
+207.425908 70.913596 l
+207.495168 68.101587 l
+207.564428 64.137822 l
+207.633687 73.436964 l
+207.702947 70.99182 l
+207.772207 67.688463 l
+207.841466 74.422367 l
+208.023273 58.176013 l
+208.092532 76.698219 l
+208.161792 70.822596 l
+208.231052 71.063219 l
+208.300311 78.732544 l
+208.438831 62.994416 l
+208.50809 75.808558 l
+208.57735 63.020751 l
+208.715869 76.873261 l
+208.785129 57.618558 l
+208.854388 76.853986 l
+208.923648 66.478294 l
+208.992908 65.36879 l
+209.062167 71.038396 l
+209.105455 66.951592 l
+209.174714 65.050173 l
+209.313233 74.531591 l
+209.382493 70.56526 l
+209.451753 73.763077 l
+209.590272 67.093579 l
+209.798051 75.334586 l
+209.93657 65.22398 l
+210.00583 72.356179 l
+210.075089 70.339936 l
+210.144349 74.765293 l
+210.187636 72.860844 l
+210.256896 64.73163 l
+210.326156 66.940311 l
+210.395415 69.441303 l
+210.464675 61.18177 l
+210.603194 72.568407 l
+210.672454 68.801499 l
+210.741713 72.45151 l
+210.949492 63.29615 l
+211.018752 63.959023 l
+211.226531 68.638754 l
+211.269818 76.908661 l
+211.339078 62.359563 l
+211.408337 66.031569 l
+211.477597 62.31614 l
+211.546857 63.769353 l
+211.616116 69.905604 l
+211.685376 65.831013 l
+211.754636 76.206073 l
+211.823895 64.607149 l
+211.893155 67.17683 l
+211.962415 68.934061 l
+212.031674 64.297674 l
+212.100934 72.277159 l
+212.170193 61.827017 l
+212.308713 78.268824 l
+212.42126 64.167679 l
+212.559779 76.434919 l
+212.629039 69.315074 l
+212.698298 76.205442 l
+212.767558 69.110373 l
+212.836817 73.640404 l
+213.044596 65.184314 l
+213.113856 74.347813 l
+213.183116 72.165964 l
+213.321635 62.351705 l
+213.390895 64.000296 l
+213.503441 73.197815 l
+213.641961 60.656453 l
+213.84974 80.302406 l
+213.918999 62.489401 l
+213.988259 63.256405 l
+214.126778 72.958653 l
+214.196038 64.354829 l
+214.265297 72.966838 l
+214.334557 63.054718 l
+214.403817 72.096028 l
+214.473076 68.281289 l
+214.516364 68.056127 l
+214.585623 64.190989 l
+214.654883 67.735166 l
+214.724143 64.595065 l
+214.793402 78.722833 l
+214.931921 58.929937 l
+215.001181 69.977176 l
+215.070441 67.16043 l
+215.1397 72.889348 l
+215.20896 70.083066 l
+215.347479 65.339608 l
+215.416739 67.142789 l
+215.555258 63.918597 l
+215.598545 64.765316 l
+215.806324 75.979706 l
+215.875584 70.745123 l
+215.944844 73.624551 l
+216.083363 66.785651 l
+216.221882 66.953716 l
+216.291142 77.792213 l
+216.360401 62.791918 l
+216.429661 74.017595 l
+216.498921 61.9197 l
+216.56818 66.489762 l
+216.749987 69.488632 l
+216.819247 65.677812 l
+216.888506 66.717334 l
+216.957766 66.775996 l
+217.027025 70.457641 l
+217.096285 67.046619 l
+217.304064 76.719985 l
+217.442583 71.758837 l
+217.581103 81.018856 l
+217.719622 62.679393 l
+217.762909 69.762164 l
+217.901428 73.284635 l
+218.039948 66.623642 l
+218.109207 72.753386 l
+218.178467 60.713897 l
+218.247727 64.733515 l
+218.316986 77.501111 l
+218.386246 62.991181 l
+218.455505 68.340106 l
+218.524765 74.671792 l
+218.594025 63.264318 l
+218.663284 73.488781 l
+218.732544 71.902492 l
+218.801804 71.027405 l
+218.845091 63.968045 l
+219.05287 73.948531 l
+219.122129 64.416454 l
+219.260649 74.323979 l
+219.399168 63.933975 l
+219.468428 70.477026 l
+219.537687 69.12095 l
+219.676207 63.457801 l
+219.745466 67.445037 l
+219.814726 67.318853 l
+219.883985 67.573416 l
+219.927273 63.268571 l
+220.135052 80.673759 l
+220.204311 67.549098 l
+220.273571 70.176275 l
+220.342831 66.312153 l
+220.41209 66.689008 l
+220.48135 73.805487 l
+220.550609 62.540833 l
+220.619869 76.422892 l
+220.689129 68.315384 l
+220.758388 60.540456 l
+220.896908 72.933646 l
+220.966167 62.823983 l
+221.009455 65.357363 l
+221.078714 69.430064 l
+221.147974 63.296834 l
+221.355753 77.7054 l
+221.632791 64.256636 l
+221.702051 75.890262 l
+221.771311 66.678341 l
+221.84057 72.314361 l
+221.90983 64.081769 l
+221.979089 68.960916 l
+222.048349 72.609017 l
+222.160896 66.987835 l
+222.230156 71.60034 l
+222.299415 67.187597 l
+222.368675 70.608853 l
+222.507194 63.784677 l
+222.645713 74.06427 l
+222.784233 62.337144 l
+222.853492 66.233685 l
+222.922752 60.013429 l
+222.992012 65.771785 l
+223.061271 61.239968 l
+223.173818 73.340122 l
+223.243078 66.185342 l
+223.312337 68.706766 l
+223.381597 73.962603 l
+223.520116 67.338513 l
+223.589376 75.013765 l
+223.658636 64.124257 l
+223.727895 69.806967 l
+223.866415 66.206212 l
+223.935674 66.974632 l
+224.004934 68.001162 l
+224.074193 63.253386 l
+224.143453 66.001938 l
+224.212713 62.410668 l
+224.32526 75.950755 l
+224.394519 72.580768 l
+224.463779 53.790812 l
+224.533039 73.844773 l
+224.602298 67.576939 l
+224.671558 66.643103 l
+224.740817 74.317453 l
+224.810077 66.212835 l
+224.879337 69.218385 l
+224.948596 63.276364 l
+225.087116 69.936616 l
+225.156375 69.751533 l
+225.225635 68.540699 l
+225.294895 72.416666 l
+225.338182 62.424809 l
+225.407441 66.256272 l
+225.476701 63.524989 l
+225.545961 67.434059 l
+225.61522 64.053803 l
+225.75374 72.563473 l
+225.892259 66.257741 l
+226.030778 74.457538 l
+226.169297 63.409117 l
+226.307817 71.858967 l
+226.377076 70.069056 l
+226.420364 73.160251 l
+226.489623 63.173474 l
+226.558883 67.077071 l
+226.628143 68.970073 l
+226.697402 65.52206 l
+226.766662 66.626382 l
+226.905181 72.562423 l
+226.974441 68.101208 l
+227.0437 69.23206 l
+227.11296 67.130431 l
+227.18222 74.630484 l
+227.251479 70.566991 l
+227.389999 64.146181 l
+227.459258 78.939706 l
+227.502545 74.076075 l
+227.641065 67.210279 l
+227.710324 75.750029 l
+227.918103 59.279235 l
+227.987363 69.409228 l
+228.056623 69.158829 l
+228.195142 71.717403 l
+228.264401 67.036426 l
+228.333661 74.06489 l
+228.402921 57.371534 l
+228.47218 70.947229 l
+228.54144 66.569911 l
+228.584727 63.824273 l
+228.653987 63.854981 l
+228.792506 72.556463 l
+228.861766 60.937658 l
+229.069545 76.228425 l
+229.277324 66.493045 l
+229.346583 74.181542 l
+229.415843 70.054943 l
+229.485103 63.232648 l
+229.623622 74.443303 l
+229.666909 73.525987 l
+229.736169 69.563368 l
+229.805428 80.21673 l
+229.874688 66.011438 l
+229.943948 75.891119 l
+230.013207 63.500157 l
+230.082467 68.377062 l
+230.151727 71.869592 l
+230.220986 70.767464 l
+230.290246 71.848594 l
+230.359505 67.489921 l
+230.428765 71.48568 l
+230.498025 68.023798 l
+230.567284 73.638731 l
+230.749091 67.122075 l
+230.818351 66.86644 l
+230.88761 67.014788 l
+231.026129 76.986092 l
+231.233908 64.768946 l
+231.303168 76.700835 l
+231.372428 64.212519 l
+231.441687 69.618302 l
+231.510947 77.65512 l
+231.649466 66.080141 l
+231.718726 68.176929 l
+231.787985 63.170541 l
+231.831273 67.090681 l
+231.900532 69.279153 l
+231.969792 65.466503 l
+232.039052 66.709997 l
+232.108311 65.385421 l
+232.177571 67.647918 l
+232.246831 61.538751 l
+232.31609 76.03047 l
+232.38535 63.29412 l
+232.454609 70.249991 l
+232.523869 67.388508 l
+232.662388 73.938114 l
+232.731648 65.765696 l
+232.800908 67.714587 l
+232.870167 75.30599 l
+232.913455 72.26993 l
+232.982714 69.701704 l
+233.051974 71.961327 l
+233.190493 59.698469 l
+233.259753 61.982688 l
+233.398272 68.085844 l
+233.467532 65.122253 l
+233.536791 79.322984 l
+233.675311 64.307437 l
+233.81383 71.695368 l
+233.883089 62.140448 l
+233.952349 67.851325 l
+234.064896 73.951631 l
+234.134156 67.892726 l
+234.203415 76.023022 l
+234.341935 60.598621 l
+234.411194 69.349227 l
+234.480454 68.96267 l
+234.549713 71.34946 l
+234.618973 67.222431 l
+234.688233 75.224977 l
+234.757492 73.307958 l
+234.826752 68.841722 l
+234.896012 73.812137 l
+235.077818 59.615529 l
+235.147078 67.485961 l
+235.216337 65.978817 l
+235.285597 64.434263 l
+235.354857 70.125526 l
+235.424116 68.394327 l
+235.493376 63.109232 l
+235.631895 72.569915 l
+235.770415 70.061213 l
+235.839674 78.128833 l
+235.978193 56.628731 l
+236.116713 70.067803 l
+236.16 62.616266 l
+236.22926 69.677908 l
+236.298519 70.863161 l
+236.367779 67.577247 l
+236.644817 77.875009 l
+236.714077 69.948564 l
+236.783337 78.118993 l
+236.852596 76.800348 l
+237.129635 63.734401 l
+237.198895 70.080954 l
+237.242182 69.642862 l
+237.311441 63.96062 l
+237.380701 71.6644 l
+237.51922 64.291779 l
+237.65774 70.318603 l
+238.004038 59.043731 l
+238.073297 74.706098 l
+238.142557 67.364626 l
+238.211817 67.39302 l
+238.281076 60.353219 l
+238.324364 67.296657 l
+238.393623 65.770832 l
+238.462883 64.771442 l
+238.601402 77.436268 l
+238.739921 60.940125 l
+238.878441 72.963872 l
+238.9477 61.502376 l
+239.01696 66.856215 l
+239.224739 70.615012 l
+239.363258 57.097353 l
+239.545065 71.42905 l
+239.614324 66.886933 l
+239.683584 69.662067 l
+239.752844 62.878869 l
+239.822103 74.455279 l
+239.891363 65.756483 l
+239.960623 74.379789 l
+240.029882 64.176013 l
+240.099142 66.716674 l
+240.237661 62.234589 l
+240.44544 72.298945 l
+240.488727 71.38516 l
+240.557987 66.033158 l
+240.627247 74.486755 l
+240.696506 69.08685 l
+240.904285 77.767022 l
+241.042804 66.19731 l
+241.112064 74.006647 l
+241.181324 62.888305 l
+241.319843 74.353835 l
+241.389103 57.717677 l
+241.458362 82.692835 l
+241.527622 62.139882 l
+241.570909 67.157253 l
+241.640169 75.507357 l
+241.709428 59.383492 l
+241.778688 69.403898 l
+241.847948 66.126171 l
+241.917207 65.905824 l
+241.986467 62.818638 l
+242.055727 70.248426 l
+242.124986 66.053576 l
+242.194246 72.962761 l
+242.263505 63.226063 l
+242.332765 68.277423 l
+242.402025 66.399151 l
+242.471284 66.959448 l
+242.540544 73.39542 l
+242.609804 66.843194 l
+242.653091 67.247156 l
+242.722351 77.630156 l
+242.79161 61.023289 l
+242.86087 66.108936 l
+242.999389 71.55329 l
+243.068649 69.471675 l
+243.137908 61.957027 l
+243.276428 71.857501 l
+243.345687 70.711478 l
+243.414947 61.884475 l
+243.484207 63.678629 l
+243.553466 65.334278 l
+243.622726 71.083983 l
+243.691985 69.543538 l
+243.804532 75.702227 l
+243.873792 70.938281 l
+243.943052 77.894954 l
+244.012311 74.482579 l
+244.150831 65.682429 l
+244.22009 66.293389 l
+244.28935 71.888994 l
+244.358609 61.513221 l
+244.427869 65.601767 l
+244.497129 71.63988 l
+244.566388 63.512227 l
+244.635648 65.636101 l
+244.704908 65.040088 l
+244.774167 67.634208 l
+244.817455 56.718344 l
+244.886714 57.315825 l
+244.955974 73.547198 l
+245.025233 70.033838 l
+245.163753 62.865211 l
+245.302272 69.471338 l
+245.371532 69.217045 l
+245.510051 65.398928 l
+245.579311 66.814574 l
+245.64857 65.176109 l
+245.71783 66.954761 l
+245.856349 77.692487 l
+245.968896 60.924813 l
+246.176675 72.589603 l
+246.315194 59.74479 l
+246.384454 66.867584 l
+246.453713 65.948559 l
+246.522973 60.906562 l
+246.592233 72.49204 l
+246.661492 66.905385 l
+246.730752 70.611217 l
+246.869271 64.289399 l
+246.938531 68.815138 l
+246.981818 67.540316 l
+247.051078 65.4352 l
+247.120337 57.412882 l
+247.328116 69.016578 l
+247.466636 56.796249 l
+247.535895 70.992821 l
+247.605155 66.139758 l
+247.674415 56.570764 l
+247.743674 66.661933 l
+247.812934 66.200891 l
+247.882193 61.95251 l
+247.951453 74.449699 l
+248.020713 69.377619 l
+248.064 61.127461 l
+248.202519 72.551559 l
+248.410298 64.798208 l
+248.479558 75.175331 l
+248.548817 68.182737 l
+248.618077 70.587413 l
+248.756596 63.353054 l
+248.825856 66.178727 l
+248.895116 74.213497 l
+248.964375 65.312709 l
+249.102895 74.026609 l
+249.146182 61.407392 l
+249.215441 68.795226 l
+249.284701 60.04035 l
+249.49248 75.795978 l
+249.769519 65.357556 l
+249.908038 73.726161 l
+249.977297 69.382122 l
+250.046557 71.024612 l
+250.185076 64.525988 l
+250.228364 71.868429 l
+250.297623 69.805673 l
+250.366883 75.672938 l
+250.574662 54.682118 l
+250.643921 80.297082 l
+250.713181 69.296642 l
+250.782441 70.854738 l
+250.8517 60.964304 l
+250.92096 66.650622 l
+250.99022 58.073224 l
+251.059479 75.059875 l
+251.128739 57.981257 l
+251.197999 66.997386 l
+251.267258 63.642465 l
+251.310545 65.282491 l
+251.449065 71.049219 l
+251.587584 66.219557 l
+251.656844 72.771396 l
+251.726103 68.834482 l
+251.864623 73.215847 l
+251.933882 61.93435 l
+252.003142 66.481254 l
+252.072401 64.243668 l
+252.141661 64.848179 l
+252.210921 69.625442 l
+252.392727 64.191727 l
+252.531247 68.541108 l
+252.600506 69.96389 l
+252.669766 77.239244 l
+252.739025 74.396859 l
+252.808285 75.790807 l
+252.877545 72.577154 l
+252.946804 74.259117 l
+253.085324 70.744672 l
+253.154583 63.265866 l
+253.293103 74.369878 l
+253.474909 59.741344 l
+253.613428 72.638577 l
+253.682688 59.266839 l
+253.751948 61.505249 l
+253.890467 68.306027 l
+253.959727 65.209911 l
+254.028986 66.987827 l
+254.098246 66.20913 l
+254.167505 61.534833 l
+254.236765 68.364127 l
+254.306025 62.751452 l
+254.375284 67.346051 l
+254.444544 65.216569 l
+254.513804 68.581068 l
+254.557091 68.415058 l
+254.626351 65.791898 l
+254.69561 57.768073 l
+254.76487 62.08044 l
+254.834129 58.024365 l
+254.903389 72.91262 l
+254.972649 67.242133 l
+255.111168 68.738468 l
+255.249687 62.622576 l
+255.318947 68.890821 l
+255.388207 68.195562 l
+255.457466 68.900771 l
+255.526726 66.247917 l
+255.639273 75.112006 l
+255.708532 60.04154 l
+255.777792 63.405509 l
+255.847052 54.603507 l
+255.916311 64.827874 l
+255.985571 63.185987 l
+256.054831 63.9021 l
+256.12409 66.012438 l
+256.19335 71.83286 l
+256.331869 59.358636 l
+256.401129 71.061617 l
+256.470388 59.767874 l
+256.539648 66.197799 l
+256.721455 69.914509 l
+256.790714 64.131241 l
+256.929233 69.594895 l
+257.067753 66.393737 l
+257.137012 66.162114 l
+257.275532 75.206912 l
+257.344791 65.775501 l
+257.414051 73.503443 l
+257.483311 59.416388 l
+257.62183 77.672887 l
+257.760349 62.692084 l
+257.803636 70.282096 l
+257.872896 68.470053 l
+257.942156 73.024639 l
+258.080675 54.535123 l
+258.149935 63.860775 l
+258.288454 77.386563 l
+258.357713 69.578159 l
+258.426973 74.411037 l
+258.496233 67.057459 l
+258.565492 72.125739 l
+258.704012 62.315127 l
+258.773271 70.890435 l
+258.955078 62.023833 l
+259.024337 71.196323 l
+259.093597 68.685083 l
+259.162857 66.55961 l
+259.232116 74.574984 l
+259.301376 71.432726 l
+259.439895 60.477404 l
+259.509155 61.528896 l
+259.578415 77.792352 l
+259.647674 69.283093 l
+259.716934 59.712339 l
+259.786193 65.000738 l
+259.855453 67.302517 l
+259.924713 65.382219 l
+260.03726 75.832067 l
+260.106519 63.618153 l
+260.175779 74.259597 l
+260.245039 65.721576 l
+260.314298 66.882788 l
+260.383558 70.276527 l
+260.452817 69.233829 l
+260.591337 61.478528 l
+260.660596 62.164732 l
+260.729856 65.403419 l
+260.799116 62.972667 l
+260.868375 70.816275 l
+260.937635 67.706878 l
+261.006895 67.427894 l
+261.050182 62.647588 l
+261.119441 75.401348 l
+261.188701 68.719111 l
+261.257961 64.180416 l
+261.32722 73.134995 l
+261.39648 72.598981 l
+261.46574 54.852652 l
+261.604259 69.509837 l
+261.673519 66.740488 l
+261.742778 69.681016 l
+261.812038 63.728588 l
+261.881297 73.675976 l
+262.019817 55.38321 l
+262.089076 66.032989 l
+262.132364 60.021439 l
+262.340143 77.121156 l
+262.409402 66.796129 l
+262.478662 68.02059 l
+262.547921 75.836336 l
+262.686441 61.136697 l
+262.7557 75.388519 l
+262.82496 63.841386 l
+262.89422 74.992893 l
+262.963479 70.997876 l
+263.032739 60.266237 l
+263.214545 71.577702 l
+263.353065 61.239853 l
+263.491584 74.128311 l
+263.560844 62.443663 l
+263.699363 74.121032 l
+263.768623 65.373763 l
+263.837882 70.670261 l
+264.045661 59.567752 l
+264.114921 73.744815 l
+264.18418 70.761802 l
+264.365987 61.609088 l
+264.435247 73.582359 l
+264.504506 68.611469 l
+264.573766 76.793421 l
+264.643025 63.884439 l
+264.712285 74.735834 l
+264.850804 57.400763 l
+264.920064 63.256685 l
+264.989324 83.845097 l
+265.058583 67.579161 l
+265.127843 72.290771 l
+265.197103 66.952504 l
+265.266362 71.8858 l
+265.335622 70.995222 l
+265.378909 63.393863 l
+265.448169 68.196188 l
+265.586688 59.240036 l
+265.655948 74.023346 l
+265.725207 63.411911 l
+265.863727 75.140136 l
+265.932986 71.265096 l
+266.002246 59.036794 l
+266.071505 73.476107 l
+266.140765 67.384293 l
+266.210025 57.745555 l
+266.279284 76.984666 l
+266.348544 62.632761 l
+266.417804 76.208863 l
+266.461091 70.522383 l
+266.59961 77.421698 l
+266.66887 61.379797 l
+266.738129 62.792306 l
+266.807389 63.626019 l
+266.876649 73.403751 l
+266.945908 65.061651 l
+267.084428 77.563927 l
+267.292207 64.894767 l
+267.361466 68.019985 l
+267.430726 60.120579 l
+267.499985 71.58686 l
+267.543273 58.165459 l
+267.612532 71.555257 l
+267.681792 66.487227 l
+267.751052 63.605312 l
+267.889571 69.255507 l
+267.958831 58.262674 l
+268.09735 76.970892 l
+268.166609 72.928267 l
+268.235869 76.849379 l
+268.305129 71.663343 l
+268.374388 80.372617 l
+268.512908 61.845138 l
+268.582167 78.264477 l
+268.625455 69.103289 l
+268.694714 64.596039 l
+268.763974 70.434439 l
+268.833233 68.957657 l
+268.902493 69.667966 l
+269.110272 65.708657 l
+269.179532 73.73854 l
+269.248791 59.205859 l
+269.45657 76.332293 l
+269.52583 57.580629 l
+269.595089 70.008319 l
+269.664349 66.731214 l
+269.707636 68.848269 l
+269.776896 62.47737 l
+269.915415 69.573691 l
+269.984675 67.297546 l
+270.053935 68.9818 l
+270.123194 67.581264 l
+270.192454 75.970486 l
+270.261713 68.808623 l
+270.330973 72.722557 l
+270.400233 74.091493 l
+270.469492 62.187405 l
+270.538752 64.801001 l
+270.608012 65.330727 l
+270.677271 57.516063 l
+270.746531 62.11481 l
+270.859078 70.493835 l
+270.928337 64.583494 l
+270.997597 66.812469 l
+271.205376 70.152593 l
+271.274636 59.908506 l
+271.343895 79.257986 l
+271.413155 73.766834 l
+271.482415 72.898355 l
+271.551674 78.413193 l
+271.620934 61.817825 l
+271.690193 64.451904 l
+271.759453 65.215314 l
+271.828713 73.355674 l
+271.872 63.965355 l
+271.94126 76.16709 l
+272.010519 73.223655 l
+272.149039 60.039257 l
+272.218298 78.011621 l
+272.287558 68.450662 l
+272.356817 73.667482 l
+272.426077 63.12873 l
+272.495337 71.284082 l
+272.564596 65.806251 l
+272.633856 67.97427 l
+272.772375 71.190383 l
+272.841635 60.632671 l
+272.910895 72.229371 l
+272.954182 59.613914 l
+273.023441 61.747937 l
+273.092701 77.200571 l
+273.161961 73.094736 l
+273.30048 67.845701 l
+273.36974 74.280465 l
+273.508259 62.291969 l
+273.577519 75.68761 l
+273.646778 70.203668 l
+273.716038 64.18567 l
+273.854557 74.745905 l
+274.105623 57.986428 l
+274.244143 70.403735 l
+274.313402 70.151368 l
+274.382662 64.145964 l
+274.521181 78.677504 l
+274.6597 69.459844 l
+274.72896 74.235438 l
+274.79822 62.826831 l
+274.867479 69.23321 l
+275.005999 70.976652 l
+275.187805 63.858688 l
+275.326324 72.591743 l
+275.395584 62.343098 l
+275.464844 68.144244 l
+275.534103 73.642245 l
+275.603363 59.062572 l
+275.672623 62.800262 l
+275.741882 58.079247 l
+275.880401 69.735414 l
+275.949661 67.157093 l
+276.018921 72.570728 l
+276.15744 65.88039 l
+276.200727 66.46255 l
+276.269987 70.08586 l
+276.339247 64.18798 l
+276.408506 69.469136 l
+276.477766 65.23204 l
+276.547025 66.132554 l
+276.616285 71.678938 l
+276.685545 70.282569 l
+276.824064 50.112 l
+276.893324 69.837778 l
+276.962583 67.216756 l
+277.031843 64.952365 l
+277.101103 74.968138 l
+277.170362 71.4338 l
+277.239622 66.004068 l
+277.282909 70.077131 l
+277.352169 68.720515 l
+277.421428 73.229523 l
+277.490688 70.832083 l
+277.698467 59.728756 l
+277.767727 71.04982 l
+277.836986 69.218287 l
+277.906246 67.335081 l
+277.975505 69.55644 l
+278.114025 64.279868 l
+278.183284 63.981624 l
+278.321804 73.854257 l
+278.434351 64.027518 l
+278.642129 78.351311 l
+278.780649 70.100601 l
+278.988428 78.484863 l
+279.196207 61.008901 l
+279.265466 63.32116 l
+279.334726 72.064283 l
+279.403985 69.983177 l
+279.447273 64.114242 l
+279.516532 73.091392 l
+279.585792 67.945276 l
+279.793571 59.761085 l
+279.862831 69.325334 l
+279.93209 65.487353 l
+280.00135 62.629152 l
+280.139869 70.653586 l
+280.209129 58.365921 l
+280.416908 72.78644 l
+280.598714 66.650898 l
+280.737233 73.920014 l
+280.806493 62.174023 l
+280.875753 66.916517 l
+280.945012 69.02426 l
+281.014272 67.424515 l
+281.152791 76.297543 l
+281.222051 61.567605 l
+281.291311 73.809062 l
+281.36057 70.135123 l
+281.42983 70.930197 l
+281.499089 66.881254 l
+281.568349 70.016605 l
+281.611636 64.884775 l
+281.680896 71.66542 l
+281.750156 62.603745 l
+281.888675 74.351816 l
+281.957935 67.36554 l
+282.027194 76.684796 l
+282.304233 56.954721 l
+282.373492 68.395501 l
+282.442752 67.26307 l
+282.581271 73.036953 l
+282.763078 58.008451 l
+282.832337 69.324569 l
+282.901597 67.504133 l
+282.970857 68.860314 l
+283.040116 75.481876 l
+283.178636 68.432885 l
+283.247895 69.419972 l
+283.317155 68.265217 l
+283.386415 71.784671 l
+283.455674 71.622415 l
+283.524934 67.414225 l
+283.594193 69.964216 l
+283.663453 65.822829 l
+283.732713 74.107077 l
+283.776 69.389466 l
+283.914519 61.932947 l
+283.983779 73.607704 l
+284.053039 59.316168 l
+284.122298 72.259058 l
+284.260817 56.657018 l
+284.330077 68.905897 l
+284.399337 60.415649 l
+284.537856 71.4888 l
+284.607116 69.673632 l
+284.814895 72.527866 l
+284.858182 60.595923 l
+284.927441 78.90702 l
+284.996701 70.502791 l
+285.065961 62.721013 l
+285.13522 66.988165 l
+285.27374 75.086237 l
+285.481519 64.016312 l
+285.689297 79.895625 l
+285.827817 61.589347 l
+285.897076 62.660899 l
+285.940364 75.844061 l
+286.009623 70.640726 l
+286.078883 65.271739 l
+286.148143 66.540472 l
+286.286662 77.579155 l
+286.355921 68.903222 l
+286.425181 81.58788 l
+286.5637 68.329879 l
+286.63296 69.291639 l
+286.70222 60.509052 l
+286.771479 68.182254 l
+286.840739 63.775591 l
+287.022545 71.572136 l
+287.091805 63.513456 l
+287.230324 70.427929 l
+287.299584 64.66606 l
+287.368844 66.633451 l
+287.438103 69.725351 l
+287.507363 60.116958 l
+287.576623 69.756584 l
+287.645882 63.057491 l
+287.784401 74.895673 l
+287.922921 65.219989 l
+287.99218 67.577162 l
+288.06144 66.005558 l
+288.104727 59.318263 l
+288.173987 62.10307 l
+288.243247 60.270506 l
+288.312506 61.348808 l
+288.381766 71.146496 l
+288.451025 65.961445 l
+288.520285 74.421811 l
+288.589545 71.711385 l
+288.728064 62.386971 l
+288.935843 72.737695 l
+289.005103 65.358318 l
+289.074362 67.831863 l
+289.186909 58.467137 l
+289.256169 71.228209 l
+289.325428 66.397138 l
+289.394688 65.386565 l
+289.533207 73.738847 l
+289.602467 69.865068 l
+289.671727 54.392859 l
+289.810246 72.420902 l
+289.879505 67.625815 l
+290.087284 73.732983 l
+290.225804 64.750912 l
+290.338351 73.907006 l
+290.47687 69.725937 l
+290.546129 69.557467 l
+290.615389 73.664809 l
+290.823168 59.706532 l
+290.961687 65.478365 l
+291.100207 70.854481 l
+291.169466 61.149737 l
+291.238726 64.075331 l
+291.307985 62.502779 l
+291.351273 51.654438 l
+291.489792 77.590226 l
+291.559052 74.237568 l
+291.697571 58.298263 l
+291.83609 69.261007 l
+291.90535 66.111817 l
+291.974609 67.403172 l
+292.043869 65.715711 l
+292.113129 70.79905 l
+292.182388 69.826369 l
+292.390167 65.478201 l
+292.433455 74.783423 l
+292.502714 67.663307 l
+292.571974 67.805713 l
+292.641233 65.21597 l
+292.710493 67.387264 l
+292.849012 59.158724 l
+292.918272 69.616182 l
+292.987532 65.128742 l
+293.056791 63.314703 l
+293.126051 75.854187 l
+293.195311 69.046898 l
+293.26457 69.75503 l
+293.403089 68.870557 l
+293.472349 69.069062 l
+293.515636 69.044341 l
+293.584896 75.940995 l
+293.723415 68.39589 l
+293.792675 69.293016 l
+293.861935 66.398585 l
+293.931194 71.609798 l
+294.069713 64.816295 l
+294.138973 66.775621 l
+294.208233 71.934246 l
+294.277492 60.200295 l
+294.416012 78.250012 l
+294.485271 76.121898 l
+294.736337 61.313888 l
+294.805597 62.446286 l
+294.944116 75.81798 l
+295.013376 62.03912 l
+295.151895 74.767877 l
+295.221155 57.116665 l
+295.290415 64.324304 l
+295.359674 76.386431 l
+295.428934 62.163037 l
+295.498193 69.755645 l
+295.567453 77.793848 l
+295.636713 61.75559 l
+295.68 67.187821 l
+295.74926 63.962466 l
+295.818519 65.595392 l
+295.957039 69.965671 l
+296.026298 67.059376 l
+296.095558 74.734923 l
+296.234077 67.346945 l
+296.303337 68.59204 l
+296.372596 54.808359 l
+296.511116 72.041702 l
+296.580375 66.825152 l
+296.649635 78.016592 l
+296.762182 58.718948 l
+296.831441 67.372267 l
+296.900701 67.763556 l
+296.969961 65.977082 l
+297.03922 66.719892 l
+297.10848 70.614425 l
+297.17774 64.645455 l
+297.316259 73.889418 l
+297.385519 72.388538 l
+297.454778 71.848821 l
+297.593297 73.209453 l
+297.662557 66.75634 l
+297.731817 71.287848 l
+297.801076 61.17732 l
+297.844364 67.990497 l
+297.913623 74.494393 l
+298.052143 53.309134 l
+298.190662 74.909994 l
+298.329181 65.822172 l
+298.53696 78.817024 l
+298.675479 64.797624 l
+298.744739 69.284694 l
+298.883258 65.527714 l
+298.926545 73.349113 l
+298.995805 70.649359 l
+299.065065 70.979719 l
+299.134324 61.269423 l
+299.203584 66.651165 l
+299.272844 71.461602 l
+299.342103 70.23404 l
+299.411363 69.698012 l
+299.480623 64.144333 l
+299.549882 65.610681 l
+299.619142 63.851614 l
+299.688401 57.731796 l
+299.826921 73.34081 l
+299.89618 65.048632 l
+299.96544 69.251198 l
+300.008727 67.775069 l
+300.077987 60.507072 l
+300.216506 78.445025 l
+300.424285 61.443438 l
+300.493545 74.868572 l
+300.562804 64.929283 l
+300.632064 71.024764 l
+300.701324 63.409119 l
+300.770583 68.637545 l
+300.839843 68.32405 l
+300.978362 61.74114 l
+301.047622 68.787434 l
+301.090909 64.053664 l
+301.298688 66.504886 l
+301.367948 64.5169 l
+301.437207 74.382635 l
+301.506467 59.343768 l
+301.575727 69.893919 l
+301.644986 69.685291 l
+301.714246 71.946942 l
+301.852765 62.160091 l
+301.922025 72.744052 l
+301.991284 64.136471 l
+302.060544 68.822761 l
+302.129804 62.742392 l
+302.173091 62.760481 l
+302.242351 65.780023 l
+302.31161 74.151514 l
+302.38087 69.026653 l
+302.450129 71.882672 l
+302.657908 65.593721 l
+302.727168 69.096154 l
+302.796428 63.716797 l
+302.865687 73.508503 l
+302.934947 67.882998 l
+303.004207 76.343131 l
+303.142726 69.347678 l
+303.211985 67.847404 l
+303.255273 68.49024 l
+303.324532 60.472238 l
+303.393792 70.914704 l
+303.463052 54.078587 l
+303.601571 83.85431 l
+303.74009 67.297647 l
+303.947869 77.244116 l
+304.017129 58.260855 l
+304.086388 67.597121 l
+304.294167 75.382366 l
+304.406714 60.509189 l
+304.475974 64.584887 l
+304.545233 62.898568 l
+304.614493 70.276522 l
+304.683753 61.785432 l
+304.753012 68.533459 l
+304.822272 58.464394 l
+304.891532 63.53095 l
+304.960791 77.305576 l
+305.16857 53.163042 l
+305.376349 72.753428 l
+305.488896 59.622949 l
+305.558156 70.699086 l
+305.696675 59.200174 l
+305.835194 72.564722 l
+305.904454 61.639663 l
+305.973713 77.277754 l
+306.112233 65.471703 l
+306.181492 73.408666 l
+306.250752 70.437848 l
+306.320012 69.673252 l
+306.389271 70.28358 l
+306.458531 69.515291 l
+306.501818 58.115073 l
+306.571078 73.743133 l
+306.640337 58.695676 l
+306.778857 73.082268 l
+306.848116 67.362422 l
+306.986636 74.037889 l
+307.055895 69.151557 l
+307.125155 69.271035 l
+307.194415 67.913211 l
+307.263674 78.393423 l
+307.402193 64.756612 l
+307.471453 68.237291 l
+307.540713 77.377535 l
+307.584 63.297908 l
+307.65326 72.07286 l
+307.930298 58.963566 l
+308.068817 79.306734 l
+308.138077 58.458383 l
+308.207337 69.00367 l
+308.276596 59.693892 l
+308.345856 74.855506 l
+308.415116 61.937408 l
+308.484375 74.090745 l
+308.553635 70.48416 l
+308.622895 69.516806 l
+308.666182 66.752131 l
+308.804701 70.770483 l
+308.94322 57.892446 l
+309.08174 68.996135 l
+309.220259 60.425507 l
+309.289519 63.611888 l
+309.428038 71.03359 l
+309.497297 66.766705 l
+309.566557 70.352613 l
+309.635817 69.261724 l
+309.705076 64.420519 l
+309.748364 70.713367 l
+309.817623 66.092974 l
+309.956143 71.484201 l
+310.025402 62.137579 l
+310.094662 70.346522 l
+310.163921 67.712347 l
+310.302441 74.483509 l
+310.44096 59.698116 l
+310.51022 65.06436 l
+310.579479 65.044363 l
+310.648739 65.190001 l
+310.717999 70.141513 l
+310.787258 66.186385 l
+310.830545 70.74691 l
+310.969065 65.922571 l
+311.038324 74.850864 l
+311.107584 69.969647 l
+311.176844 68.672353 l
+311.246103 71.70795 l
+311.315363 71.681278 l
+311.453882 73.614114 l
+311.661661 70.436741 l
+311.730921 63.079107 l
+311.80018 78.432596 l
+311.86944 58.736101 l
+311.912727 67.34667 l
+311.981987 59.90235 l
+312.189766 72.033573 l
+312.328285 62.851665 l
+312.397545 72.762168 l
+312.466804 63.517657 l
+312.536064 66.486517 l
+312.605324 68.842086 l
+312.674583 61.354202 l
+312.743843 71.261915 l
+312.813103 65.112379 l
+312.994909 73.037372 l
+313.064169 65.873565 l
+313.133428 66.488892 l
+313.202688 72.35962 l
+313.271948 63.436168 l
+313.341207 78.863461 l
+313.410467 60.779032 l
+313.479727 67.264796 l
+313.548986 69.370449 l
+313.618246 77.517487 l
+313.826025 64.620805 l
+313.895284 73.578637 l
+313.964544 73.456354 l
+314.146351 63.392474 l
+314.28487 72.800531 l
+314.354129 68.297757 l
+314.423389 71.46815 l
+314.492649 63.950062 l
+314.561908 67.700646 l
+314.631168 66.292186 l
+314.700428 60.735889 l
+314.769687 70.376515 l
+314.838947 65.92166 l
+314.977466 70.863105 l
+315.046726 64.002652 l
+315.115985 68.068544 l
+315.159273 70.761961 l
+315.228532 59.968581 l
+315.367052 71.132487 l
+315.436311 61.398307 l
+315.505571 66.759088 l
+315.574831 60.724395 l
+315.64409 74.933997 l
+315.782609 64.760447 l
+315.990388 83.374138 l
+316.128908 72.380654 l
+316.198167 73.999783 l
+316.241455 63.128072 l
+316.310714 66.202654 l
+316.379974 70.564605 l
+316.449233 70.208696 l
+316.518493 62.184596 l
+316.587753 66.58162 l
+316.657012 64.616183 l
+316.726272 68.528707 l
+316.795532 65.880624 l
+316.864791 70.645852 l
+316.934051 57.477884 l
+317.003311 72.425969 l
+317.07257 63.274988 l
+317.14183 65.951898 l
+317.211089 69.961188 l
+317.323636 61.945191 l
+317.392896 63.377486 l
+317.531415 72.053027 l
+317.600675 60.850214 l
+317.669935 73.192881 l
+317.739194 67.784758 l
+317.877713 62.423509 l
+318.016233 72.493099 l
+318.085492 71.111542 l
+318.154752 64.582663 l
+318.224012 75.533414 l
+318.293271 74.84249 l
+318.362531 63.856781 l
+318.405818 72.329605 l
+318.475078 74.560065 l
+318.613597 62.206533 l
+318.682857 71.147869 l
+318.752116 61.718807 l
+318.821376 62.356071 l
+318.890636 72.174501 l
+318.959895 70.812419 l
+319.029155 56.310886 l
+319.098415 64.714001 l
+319.236934 70.321496 l
+319.306193 67.360141 l
+319.444713 72.267983 l
+319.488 69.945177 l
+319.55726 76.978936 l
+319.626519 61.899762 l
+319.695779 64.913672 l
+319.903558 74.337344 l
+319.972817 64.702042 l
+320.042077 66.18462 l
+320.111337 78.196975 l
+320.249856 67.217463 l
+320.319116 73.202194 l
+320.388375 72.281875 l
+320.457635 70.892567 l
+320.526895 63.095149 l
+320.570182 67.346334 l
+320.639441 70.393921 l
+320.708701 60.505488 l
+320.777961 69.212083 l
+320.84722 69.195644 l
+321.124259 63.731106 l
+321.332038 71.04399 l
+321.401297 64.380809 l
+321.470557 66.427657 l
+321.539817 69.500325 l
+321.609076 64.128704 l
+321.652364 72.06611 l
+321.721623 64.970185 l
+321.860143 68.501866 l
+321.929402 78.606806 l
+321.998662 72.516609 l
+322.067921 67.064671 l
+322.206441 74.585742 l
+322.2757 65.755621 l
+322.34496 67.908273 l
+322.41422 67.296158 l
+322.552739 79.123312 l
+322.691258 66.64564 l
+322.803805 77.173144 l
+322.873065 65.405685 l
+322.942324 68.098951 l
+323.080844 62.129436 l
+323.150103 67.355139 l
+323.219363 62.552205 l
+323.427142 72.629819 l
+323.496401 62.967364 l
+323.565661 66.980946 l
+323.634921 70.1282 l
+323.77344 55.276361 l
+323.816727 74.145411 l
+323.885987 66.137335 l
+323.955247 66.088407 l
+324.024506 65.85028 l
+324.093766 66.836061 l
+324.163025 64.455272 l
+324.232285 65.72879 l
+324.301545 69.891561 l
+324.370804 54.519474 l
+324.440064 76.57131 l
+324.509324 74.508627 l
+324.578583 59.232101 l
+324.647843 65.752268 l
+324.717103 67.631554 l
+324.786362 77.75872 l
+324.898909 64.609115 l
+324.968169 67.508714 l
+325.037428 66.741847 l
+325.106688 76.295014 l
+325.175948 67.489524 l
+325.245207 67.776261 l
+325.314467 75.805389 l
+325.383727 72.50913 l
+325.522246 66.851203 l
+325.660765 77.788231 l
+325.730025 65.946146 l
+325.799284 68.727198 l
+325.868544 66.102594 l
+326.050351 70.096686 l
+326.11961 56.999277 l
+326.18887 71.612272 l
+326.258129 67.702842 l
+326.327389 68.889072 l
+326.396649 63.467291 l
+326.465908 71.03443 l
+326.535168 68.926493 l
+326.604428 62.466458 l
+326.812207 74.96932 l
+326.881466 67.608624 l
+326.950726 68.140791 l
+327.019985 65.872815 l
+327.063273 74.911857 l
+327.132532 74.745855 l
+327.201792 61.731421 l
+327.271052 66.14952 l
+327.340311 63.318422 l
+327.478831 71.2407 l
+327.54809 61.902584 l
+327.61735 69.504157 l
+327.686609 62.257544 l
+327.755869 66.264588 l
+327.825129 62.764676 l
+327.894388 52.288887 l
+327.963648 73.847906 l
+328.032908 61.787003 l
+328.102167 62.380631 l
+328.214714 74.819084 l
+328.283974 59.568936 l
+328.353233 67.617832 l
+328.422493 72.202978 l
+328.491753 65.543447 l
+328.561012 74.057729 l
+328.630272 72.739756 l
+328.768791 64.851396 l
+328.97657 74.286577 l
+329.184349 57.034673 l
+329.227636 70.066572 l
+329.296896 66.240763 l
+329.366156 58.81807 l
+329.435415 75.484057 l
+329.504675 62.515556 l
+329.573935 64.98349 l
+329.643194 58.268097 l
+329.712454 71.97101 l
+329.781713 61.183639 l
+329.850973 68.092487 l
+329.920233 67.873941 l
+329.989492 66.464261 l
+330.058752 76.855001 l
+330.128012 71.399952 l
+330.197271 66.865195 l
+330.266531 71.449681 l
+330.379078 61.115337 l
+330.517597 71.162373 l
+330.656116 65.751014 l
+330.725376 58.557809 l
+330.794636 62.398982 l
+330.863895 78.915142 l
+330.933155 59.571517 l
+331.002415 68.450884 l
+331.071674 80.18051 l
+331.210193 65.158163 l
+331.348713 72.590423 l
+331.392 67.737523 l
+331.46126 68.029265 l
+331.530519 66.311878 l
+331.599779 71.267713 l
+331.669039 64.310869 l
+331.738298 70.723724 l
+331.807558 66.962367 l
+331.876817 66.349984 l
+332.015337 60.088102 l
+332.084596 76.480777 l
+332.153856 63.503088 l
+332.223116 69.868966 l
+332.292375 70.879158 l
+332.361635 64.237973 l
+332.430895 67.086657 l
+332.474182 66.883199 l
+332.543441 78.031882 l
+332.75122 62.189782 l
+332.82048 72.269193 l
+332.88974 67.581229 l
+333.097519 59.526222 l
+333.166778 73.790453 l
+333.236038 63.238086 l
+333.305297 72.132545 l
+333.374557 56.939834 l
+333.556364 72.239101 l
+333.694883 61.682911 l
+333.764143 69.007657 l
+333.833402 61.501884 l
+333.971921 72.924221 l
+334.041181 58.417745 l
+334.110441 70.165344 l
+334.1797 67.187383 l
+334.24896 62.82933 l
+334.31822 73.537806 l
+334.387479 66.095826 l
+334.456739 71.545203 l
+334.525999 67.62902 l
+334.595258 67.992441 l
+334.707805 73.075277 l
+334.777065 68.910467 l
+334.846324 78.429391 l
+334.915584 76.820654 l
+335.261882 58.162259 l
+335.400401 64.049869 l
+335.469661 63.318946 l
+335.538921 81.436437 l
+335.67744 64.405188 l
+335.720727 65.794569 l
+335.859247 78.135414 l
+335.997766 55.865546 l
+336.067025 69.520883 l
+336.136285 65.414878 l
+336.274804 62.347776 l
+336.344064 73.880014 l
+336.413324 65.457663 l
+336.482583 73.477675 l
+336.551843 63.21461 l
+336.690362 74.148938 l
+336.759622 64.03387 l
+336.802909 71.531288 l
+337.079948 61.204541 l
+337.218467 70.052685 l
+337.356986 60.841403 l
+337.495505 75.288069 l
+337.564765 74.493732 l
+337.772544 59.804546 l
+337.841804 70.423082 l
+337.885091 65.868675 l
+338.02361 70.574496 l
+338.09287 70.101527 l
+338.162129 62.572389 l
+338.369908 76.056248 l
+338.439168 65.303457 l
+338.508428 69.242161 l
+338.716207 64.412731 l
+338.854726 64.451987 l
+338.967273 72.937806 l
+339.036532 71.904332 l
+339.105792 70.864478 l
+339.175052 74.15896 l
+339.45209 62.895121 l
+339.590609 78.146055 l
+339.659869 71.863043 l
+339.729129 72.679951 l
+339.798388 60.782511 l
+339.867648 65.379132 l
+340.006167 76.017368 l
+340.118714 69.210466 l
+340.187974 71.657652 l
+340.326493 62.591885 l
+340.395753 66.43259 l
+340.465012 57.147569 l
+340.603532 70.117719 l
+340.672791 65.892313 l
+340.742051 69.054791 l
+340.811311 54.035001 l
+340.94983 66.806853 l
+341.019089 68.857152 l
+341.088349 68.029688 l
+341.131636 75.73958 l
+341.200896 68.527597 l
+341.270156 69.792562 l
+341.339415 74.121448 l
+341.408675 72.264466 l
+341.477935 71.947724 l
+341.547194 75.117195 l
+341.616454 61.945187 l
+341.685713 66.536493 l
+341.754973 73.378191 l
+341.824233 72.093974 l
+341.893492 68.270454 l
+341.962752 68.293967 l
+342.032012 78.214894 l
+342.170531 65.840923 l
+342.213818 70.42593 l
+342.283078 66.435544 l
+342.352337 73.338444 l
+342.560116 63.640246 l
+342.698636 68.062019 l
+342.837155 69.138763 l
+342.975674 76.323171 l
+343.044934 65.536893 l
+343.114193 66.955324 l
+343.296 70.68536 l
+343.36526 68.810509 l
+343.434519 69.479014 l
+343.503779 71.644115 l
+343.573039 59.043792 l
+343.642298 68.898386 l
+343.711558 67.098115 l
+343.780817 63.096421 l
+343.850077 69.63428 l
+343.919337 57.532863 l
+344.057856 67.456455 l
+344.127116 65.618515 l
+344.196375 73.049069 l
+344.265635 72.525737 l
+344.447441 63.569072 l
+344.516701 60.725186 l
+344.65522 66.492839 l
+344.72448 61.607641 l
+344.79374 63.637547 l
+344.862999 65.284121 l
+344.932259 64.195988 l
+345.001519 70.717742 l
+345.070778 66.176994 l
+345.278557 76.233817 l
+345.347817 72.054866 l
+345.417076 72.580108 l
+345.529623 74.572662 l
+345.668143 71.49979 l
+345.737402 64.701083 l
+345.806662 67.404366 l
+345.875921 68.170188 l
+345.945181 82.859341 l
+346.014441 66.502619 l
+346.0837 74.272862 l
+346.15296 70.737005 l
+346.22222 71.431217 l
+346.291479 70.72893 l
+346.429999 64.299476 l
+346.499258 64.353776 l
+346.542545 71.742204 l
+346.611805 68.044378 l
+346.888844 55.714042 l
+347.027363 72.358568 l
+347.096623 68.35311 l
+347.165882 69.614404 l
+347.235142 70.731282 l
+347.304401 74.201044 l
+347.373661 62.401136 l
+347.442921 69.493485 l
+347.624727 66.790538 l
+347.693987 70.417395 l
+347.763247 69.520236 l
+347.832506 62.937511 l
+347.901766 72.841398 l
+347.971025 71.837074 l
+348.040285 75.439074 l
+348.178804 64.701927 l
+348.248064 73.784692 l
+348.317324 56.65524 l
+348.386583 64.292917 l
+348.455843 72.491565 l
+348.594362 62.936217 l
+348.663622 71.221394 l
+348.706909 61.884519 l
+348.776169 64.158947 l
+348.914688 72.764313 l
+348.983948 70.116005 l
+349.053207 58.768254 l
+349.122467 60.470911 l
+349.260986 66.144622 l
+349.330246 59.224937 l
+349.399505 62.138195 l
+349.607284 70.374614 l
+349.676544 66.292744 l
+349.745804 70.252162 l
+349.789091 68.936679 l
+349.858351 68.977306 l
+349.92761 65.592859 l
+349.99687 66.193836 l
+350.066129 68.601706 l
+350.135389 59.477414 l
+350.204649 62.322614 l
+350.343168 77.980567 l
+350.412428 74.942192 l
+350.481687 75.930257 l
+350.550947 66.677768 l
+350.620207 70.003751 l
+350.689466 66.59267 l
+350.758726 67.061986 l
+350.827985 66.563092 l
+350.940532 69.183345 l
+351.148311 66.309378 l
+351.217571 66.613261 l
+351.35609 69.427486 l
+351.42535 61.077312 l
+351.494609 65.62636 l
+351.563869 71.239129 l
+351.633129 68.474539 l
+351.702388 61.75191 l
+351.771648 62.658733 l
+351.840908 63.346383 l
+351.910167 69.267645 l
+352.022714 62.517948 l
+352.091974 63.860793 l
+352.161233 75.668321 l
+352.369012 58.73302 l
+352.507532 73.596192 l
+352.646051 72.854511 l
+352.78457 60.547562 l
+352.923089 62.611781 l
+352.992349 70.838266 l
+353.035636 55.388851 l
+353.104896 67.78989 l
+353.174156 74.850115 l
+353.243415 62.36029 l
+353.312675 73.199272 l
+353.381935 68.872047 l
+353.451194 72.006165 l
+353.520454 71.731462 l
+353.589713 62.348517 l
+353.658973 72.708524 l
+353.728233 64.54382 l
+353.797492 72.263069 l
+353.866752 69.638084 l
+353.936012 59.832685 l
+354.005271 69.537629 l
+354.074531 64.664073 l
+354.256337 61.257145 l
+354.325597 65.097826 l
+354.464116 62.40595 l
+354.533376 62.969185 l
+354.671895 58.524734 l
+354.741155 75.028282 l
+354.810415 68.705165 l
+354.879674 77.9677 l
+355.018193 67.793772 l
+355.087453 69.876539 l
+355.26926 66.871738 l
+355.338519 76.469388 l
+355.407779 76.30147 l
+355.546298 66.181074 l
+355.615558 71.825884 l
+355.684817 71.713085 l
+355.823337 67.475961 l
+355.892596 70.674895 l
+355.961856 61.672647 l
+356.031116 64.477255 l
+356.100375 64.956089 l
+356.169635 72.457698 l
+356.238895 58.641712 l
+356.282182 63.414856 l
+356.351441 72.465693 l
+356.420701 67.441032 l
+356.489961 72.662715 l
+356.55922 64.739204 l
+356.62848 73.457739 l
+356.69774 71.389078 l
+356.766999 54.865447 l
+356.905519 74.365817 l
+357.113297 65.564313 l
+357.182557 68.385539 l
+357.321076 61.651207 l
+357.433623 67.449206 l
+357.502883 66.561464 l
+357.572143 63.331003 l
+357.641402 64.147184 l
+357.849181 80.185811 l
+358.05696 65.181692 l
+358.12622 82.571501 l
+358.195479 66.354122 l
+358.264739 73.552167 l
+358.333999 61.785893 l
+358.515805 72.157183 l
+358.585065 67.550944 l
+358.654324 68.838082 l
+358.723584 69.943037 l
+358.862103 61.894732 l
+358.931363 75.248883 l
+359.069882 64.516398 l
+359.208401 70.547719 l
+359.277661 62.62463 l
+359.346921 68.418573 l
+359.41618 64.715149 l
+359.48544 74.950544 l
+359.528727 69.618648 l
+359.597987 68.077064 l
+359.667247 63.669049 l
+359.805766 76.095048 l
+359.875025 77.701169 l
+359.944285 60.550426 l
+360.013545 67.401576 l
+360.082804 77.504467 l
+360.152064 76.664431 l
+360.221324 74.018014 l
+360.290583 61.543367 l
+360.359843 65.174037 l
+360.429103 75.224703 l
+360.610909 56.244716 l
+360.680169 68.305824 l
+360.749428 63.276144 l
+360.887948 69.788321 l
+360.957207 65.581251 l
+361.026467 67.510386 l
+361.095727 73.041891 l
+361.164986 66.49917 l
+361.234246 67.903424 l
+361.303505 68.225136 l
+361.372765 65.843935 l
+361.442025 69.502459 l
+361.511284 66.867555 l
+361.580544 70.013037 l
+361.649804 60.344251 l
+361.693091 71.326255 l
+361.762351 64.823828 l
+361.83161 62.141347 l
+361.970129 67.681222 l
+362.039389 76.243129 l
+362.108649 62.097809 l
+362.177908 67.668001 l
+362.247168 70.467819 l
+362.316428 62.833791 l
+362.385687 70.836029 l
+362.454947 67.039871 l
+362.524207 60.243939 l
+362.662726 72.297628 l
+362.775273 68.427726 l
+362.844532 69.546221 l
+362.913792 67.515611 l
+362.983052 72.301769 l
+363.190831 62.228543 l
+363.32935 69.638892 l
+363.398609 66.923988 l
+363.467869 69.273255 l
+363.537129 68.71907 l
+363.606388 69.606193 l
+363.675648 67.34056 l
+363.744908 71.483003 l
+363.857455 65.873813 l
+363.926714 71.502722 l
+363.995974 63.764225 l
+364.065233 66.530684 l
+364.134493 70.880704 l
+364.203753 69.881891 l
+364.342272 59.111385 l
+364.411532 75.383441 l
+364.480791 62.73454 l
+364.619311 77.916436 l
+364.75783 69.887223 l
+364.827089 75.567888 l
+364.896349 73.665933 l
+365.008896 65.166905 l
+365.078156 77.062978 l
+365.147415 71.287667 l
+365.216675 68.70464 l
+365.285935 70.216534 l
+365.355194 70.523054 l
+365.493713 63.499786 l
+365.632233 75.75682 l
+365.840012 66.169458 l
+365.909271 76.709361 l
+366.021818 66.238207 l
+366.091078 67.22924 l
+366.160337 66.956313 l
+366.229597 72.934933 l
+366.298857 55.184854 l
+366.368116 77.414763 l
+366.437376 71.421579 l
+366.506636 75.791154 l
+366.645155 59.055201 l
+366.714415 75.578736 l
+366.783674 68.302622 l
+366.922193 64.57835 l
+367.104 75.981906 l
+367.17326 74.181587 l
+367.242519 69.388122 l
+367.311779 70.940046 l
+367.381039 71.423571 l
+367.450298 66.881051 l
+367.519558 67.774991 l
+367.588817 70.279691 l
+367.658077 67.355489 l
+367.727337 69.466271 l
+367.796596 65.004733 l
+367.865856 76.472626 l
+367.935116 69.819015 l
+368.004375 64.850842 l
+368.186182 72.344245 l
+368.255441 68.164801 l
+368.324701 73.720724 l
+368.53248 62.831316 l
+368.60174 68.271182 l
+368.670999 62.548805 l
+368.740259 72.233697 l
+368.878778 56.596764 l
+368.948038 77.086142 l
+369.017297 67.324381 l
+369.086557 70.057904 l
+369.225076 56.82234 l
+369.268364 71.884896 l
+369.337623 68.53737 l
+369.406883 65.094075 l
+369.476143 69.054338 l
+369.545402 66.894353 l
+369.614662 66.931847 l
+369.822441 74.309596 l
+369.8917 73.184496 l
+369.96096 69.865375 l
+370.03022 71.396648 l
+370.099479 69.132205 l
+370.168739 78.48696 l
+370.350545 65.991021 l
+370.419805 69.075053 l
+370.489065 66.114857 l
+370.627584 72.299822 l
+370.696844 65.881535 l
+370.766103 66.458833 l
+370.835363 71.483124 l
+370.904623 60.449114 l
+371.043142 72.073191 l
+371.112401 70.935056 l
+371.181661 58.806044 l
+371.250921 62.331355 l
+371.38944 69.179403 l
+371.432727 66.913074 l
+371.571247 76.880916 l
+371.640506 66.384539 l
+371.709766 69.080861 l
+371.779025 67.540412 l
+371.848285 57.819204 l
+371.986804 71.558175 l
+372.056064 69.851011 l
+372.125324 61.918409 l
+372.194583 68.909321 l
+372.263843 64.909766 l
+372.333103 63.199828 l
+372.402362 64.353246 l
+372.514909 74.477307 l
+372.584169 64.021331 l
+372.653428 66.212962 l
+372.722688 62.647894 l
+372.791948 65.495863 l
+372.861207 62.368401 l
+372.930467 71.972395 l
+372.999727 65.988255 l
+373.068986 72.158004 l
+373.138246 62.396524 l
+373.207505 76.466373 l
+373.276765 70.488071 l
+373.346025 64.966658 l
+373.415284 71.468842 l
+373.484544 59.809223 l
+373.553804 73.969846 l
+373.597091 64.648678 l
+373.80487 73.229607 l
+373.943389 60.489902 l
+374.012649 61.39557 l
+374.081908 70.243093 l
+374.151168 59.803728 l
+374.220428 78.119186 l
+374.358947 63.983196 l
+374.428207 66.750037 l
+374.497466 75.635815 l
+374.566726 70.367537 l
+374.635985 69.644555 l
+374.679273 72.62876 l
+374.817792 60.472921 l
+374.887052 71.556489 l
+374.956311 65.977392 l
+375.025571 59.378806 l
+375.094831 60.155645 l
+375.16409 65.724942 l
+375.23335 65.110371 l
+375.302609 63.880063 l
+375.371869 68.821628 l
+375.441129 66.173489 l
+375.510388 69.287596 l
+375.579648 68.959468 l
+375.648908 63.769337 l
+375.718167 71.141419 l
+375.761455 64.787067 l
+375.830714 61.741796 l
+375.899974 73.345247 l
+375.969233 64.354905 l
+376.038493 68.50901 l
+376.107753 69.555869 l
+376.177012 60.387305 l
+376.315532 71.092411 l
+376.384791 67.258154 l
+376.454051 70.281585 l
+376.523311 62.703155 l
+376.731089 74.479011 l
+376.800349 72.78844 l
+376.912896 66.334285 l
+376.982156 62.949407 l
+377.051415 63.938893 l
+377.120675 82.042058 l
+377.189935 62.223747 l
+377.259194 66.881363 l
+377.328454 66.84553 l
+377.397713 69.555562 l
+377.466973 78.315373 l
+377.605492 57.736353 l
+377.744012 66.951575 l
+377.813271 63.320324 l
+377.882531 65.525364 l
+377.925818 76.43186 l
+377.995078 73.355447 l
+378.064337 71.399738 l
+378.133597 61.907718 l
+378.202857 64.900935 l
+378.272116 71.40769 l
+378.341376 71.101999 l
+378.410636 63.309872 l
+378.479895 65.850436 l
+378.549155 65.270276 l
+378.687674 75.389794 l
+378.756934 63.150038 l
+378.826193 72.783204 l
+378.895453 67.792188 l
+378.964713 69.518101 l
+379.008 64.482027 l
+379.07726 68.532979 l
+379.285039 62.123163 l
+379.423558 76.663894 l
+379.562077 66.954376 l
+379.700596 67.983485 l
+379.769856 71.398008 l
+379.839116 64.895801 l
+379.908375 67.467445 l
+380.090182 78.082785 l
+380.228701 54.125708 l
+380.297961 71.515466 l
+380.36722 67.203686 l
+380.43648 58.390143 l
+380.644259 71.618965 l
+380.713519 72.50896 l
+380.782778 67.245952 l
+380.852038 69.460866 l
+380.921297 65.963024 l
+381.059817 80.936096 l
+381.129076 61.574288 l
+381.172364 69.001175 l
+381.241623 69.751842 l
+381.310883 68.411355 l
+381.380143 63.452742 l
+381.449402 72.688679 l
+381.518662 71.959036 l
+381.657181 60.499988 l
+381.7957 76.568988 l
+381.86496 70.83119 l
+381.93422 67.472324 l
+382.072739 79.701972 l
+382.323805 67.109303 l
+382.393065 70.878994 l
+382.462324 65.921756 l
+382.600844 73.67813 l
+382.670103 68.341713 l
+382.739363 72.885798 l
+382.808623 64.622381 l
+382.877882 65.857171 l
+382.947142 77.881805 l
+383.016401 72.065208 l
+383.085661 69.935447 l
+383.154921 73.320098 l
+383.29344 68.342038 l
+383.336727 75.149725 l
+383.405987 68.709134 l
+383.475247 62.291797 l
+383.544506 67.840827 l
+383.613766 63.79756 l
+383.683025 70.985554 l
+383.890804 62.710596 l
+383.960064 62.532618 l
+384.029324 58.139717 l
+384.098583 72.736266 l
+384.167843 65.17897 l
+384.375622 76.845384 l
+384.418909 68.4169 l
+384.488169 68.685379 l
+384.557428 67.687657 l
+384.626688 69.399653 l
+384.695948 59.600418 l
+384.765207 74.0506 l
+384.834467 69.154953 l
+384.903727 75.029998 l
+384.972986 66.589805 l
+385.042246 75.267124 l
+385.111505 66.421768 l
+385.180765 68.04769 l
+385.250025 65.726234 l
+385.457804 69.60943 l
+385.501091 60.021312 l
+385.570351 61.89559 l
+385.70887 77.477825 l
+385.847389 66.352647 l
+385.916649 71.843165 l
+385.985908 60.588698 l
+386.055168 63.160166 l
+386.262947 68.310805 l
+386.470726 55.278168 l
+386.652532 77.920356 l
+386.721792 74.627781 l
+386.860311 63.954954 l
+386.998831 71.219515 l
+387.13735 60.226098 l
+387.206609 69.244489 l
+387.275869 67.902646 l
+387.345129 60.560128 l
+387.414388 63.009758 l
+387.483648 63.174344 l
+387.622167 72.360347 l
+387.665455 68.454957 l
+387.734714 51.630272 l
+387.942493 75.531407 l
+388.150272 68.300014 l
+388.219532 75.639456 l
+388.288791 61.541136 l
+388.358051 70.185805 l
+388.49657 58.375467 l
+388.56583 75.583805 l
+388.747636 60.577508 l
+388.955415 73.736012 l
+389.024675 62.958872 l
+389.093935 65.979825 l
+389.163194 64.63387 l
+389.370973 71.763023 l
+389.440233 66.394774 l
+389.509492 69.724704 l
+389.578752 61.846595 l
+389.717271 74.82653 l
+389.829818 59.00025 l
+389.899078 68.839176 l
+389.968337 55.637341 l
+390.106857 72.029455 l
+390.176116 71.622909 l
+390.245376 65.561767 l
+390.314636 76.438778 l
+390.383895 51.684051 l
+390.522415 72.617142 l
+390.591674 62.884086 l
+390.660934 69.396694 l
+390.730193 61.084857 l
+390.799453 61.87219 l
+390.98126 69.992409 l
+391.050519 63.464191 l
+391.258298 77.479084 l
+391.327558 64.392739 l
+391.396817 66.346126 l
+391.535337 65.054101 l
+391.604596 66.226815 l
+391.673856 65.017952 l
+391.812375 67.775023 l
+391.881635 71.247669 l
+391.950895 67.40177 l
+391.994182 70.56795 l
+392.063441 71.910361 l
+392.132701 60.529323 l
+392.201961 61.047402 l
+392.478999 66.535122 l
+392.548259 63.713197 l
+392.617519 65.837651 l
+392.686778 73.653233 l
+392.756038 70.613245 l
+392.825297 65.524916 l
+392.894557 68.412629 l
+392.963817 72.891588 l
+393.033076 65.405009 l
+393.076364 70.972057 l
+393.145623 66.327183 l
+393.214883 74.961428 l
+393.284143 63.909954 l
+393.353402 75.054638 l
+393.422662 63.333437 l
+393.491921 66.224348 l
+393.561181 59.954439 l
+393.630441 62.688638 l
+393.6997 71.530211 l
+393.76896 66.022946 l
+393.83822 73.024235 l
+393.907479 68.964471 l
+393.976739 74.195008 l
+394.115258 68.296319 l
+394.227805 73.080839 l
+394.297065 63.914413 l
+394.366324 67.261332 l
+394.435584 71.712393 l
+394.643363 61.750609 l
+394.851142 77.049043 l
+394.920401 63.039837 l
+394.989661 66.491909 l
+395.058921 65.450926 l
+395.12818 69.73979 l
+395.19744 51.098954 l
+395.240727 74.116054 l
+395.309987 72.904044 l
+395.448506 60.804632 l
+395.656285 78.834589 l
+395.725545 63.089519 l
+395.794804 67.670081 l
+395.933324 63.729476 l
+396.071843 74.227602 l
+396.141103 66.561685 l
+396.279622 79.283727 l
+396.322909 61.849101 l
+396.392169 67.463469 l
+396.461428 75.279353 l
+396.599948 60.546319 l
+396.669207 69.945188 l
+396.738467 67.548146 l
+396.807727 69.643312 l
+396.876986 62.595034 l
+396.946246 72.017456 l
+397.015505 70.038839 l
+397.084765 74.680797 l
+397.223284 66.141879 l
+397.292544 67.145437 l
+397.361804 68.690011 l
+397.405091 68.658357 l
+397.474351 63.01722 l
+397.54361 65.329644 l
+397.61287 72.009694 l
+397.820649 59.663293 l
+397.889908 59.823956 l
+397.959168 77.41163 l
+398.028428 70.957317 l
+398.166947 64.99682 l
+398.236207 65.565435 l
+398.305466 75.157277 l
+398.374726 74.539343 l
+398.443985 66.272066 l
+398.443985 66.272066 l
+stroke
+grestore
+2.000 setlinewidth
+1.000 0.000 0.000 setrgbcolor
+gsave
+357.12 266.112 57.6 38.016 clipbox
+73.832727 291.85066 m
+74.914909 248.4556 l
+75.997091 227.582733 l
+77.079273 175.764288 l
+78.161455 105.99977 l
+79.243636 100.907185 l
+80.325818 98.080255 l
+81.408 96.924894 l
+82.490182 99.619816 l
+83.572364 95.173062 l
+84.654545 95.633397 l
+85.736727 94.976088 l
+86.818909 93.372996 l
+87.901091 92.558528 l
+88.983273 92.719286 l
+90.065455 93.591059 l
+91.147636 95.748242 l
+92.229818 92.091623 l
+94.394182 95.473762 l
+95.476364 91.197675 l
+96.558545 91.651807 l
+97.640727 89.788074 l
+98.722909 89.556066 l
+99.805091 87.686545 l
+101.969455 86.724196 l
+106.298182 83.493475 l
+107.380364 83.084656 l
+108.462545 82.487982 l
+109.544727 83.13393 l
+110.626909 81.662021 l
+111.709091 82.20368 l
+112.791273 79.453176 l
+113.873455 80.616203 l
+114.955636 85.226249 l
+116.037818 79.040309 l
+117.12 77.145568 l
+118.202182 80.175527 l
+119.284364 76.789644 l
+120.366545 76.572139 l
+121.448727 80.038805 l
+122.530909 79.414097 l
+123.613091 76.399182 l
+124.695273 77.379607 l
+125.777455 76.961354 l
+126.859636 77.907391 l
+127.941818 78.103415 l
+129.024 77.833375 l
+130.106182 80.754603 l
+131.188364 82.206807 l
+132.270545 79.657943 l
+133.352727 77.640856 l
+134.434909 83.81536 l
+135.517091 79.722595 l
+136.599273 78.061503 l
+137.681455 78.587841 l
+138.763636 77.693454 l
+139.845818 80.323678 l
+140.928 80.353364 l
+142.010182 78.08496 l
+143.092364 80.068359 l
+144.174545 75.83741 l
+145.256727 75.582066 l
+146.338909 76.753804 l
+147.421091 77.352242 l
+148.503273 84.697578 l
+149.585455 75.532983 l
+150.667636 74.555933 l
+151.749818 76.867288 l
+152.832 78.738767 l
+153.914182 76.585006 l
+154.996364 81.123933 l
+156.078545 79.163332 l
+157.160727 74.639502 l
+158.242909 78.891645 l
+159.325091 73.564789 l
+160.407273 71.750938 l
+161.489455 73.917814 l
+162.571636 75.096113 l
+164.736 83.950848 l
+165.818182 72.40931 l
+166.900364 77.671891 l
+167.982545 71.670711 l
+169.064727 72.858775 l
+170.146909 72.768984 l
+171.229091 74.210371 l
+172.311273 70.778814 l
+173.393455 70.788399 l
+174.475636 76.865422 l
+175.557818 71.899901 l
+176.64 75.977158 l
+177.722182 75.246534 l
+178.804364 71.889117 l
+179.886545 79.588379 l
+180.968727 71.346432 l
+182.050909 70.106172 l
+183.133091 69.245662 l
+184.215273 69.289588 l
+186.379636 69.21419 l
+187.461818 69.187526 l
+188.544 69.590811 l
+189.626182 69.170301 l
+190.708364 69.218287 l
+191.790545 69.787793 l
+192.872727 69.310008 l
+193.954909 69.186815 l
+195.037091 69.481378 l
+196.119273 69.219364 l
+197.201455 69.145062 l
+198.283636 69.750385 l
+199.365818 69.035447 l
+201.530182 69.394429 l
+202.612364 69.127942 l
+203.694545 69.523289 l
+204.776727 69.107528 l
+205.858909 69.197502 l
+206.941091 69.436367 l
+208.023273 69.06613 l
+209.105455 69.4047 l
+210.187636 69.321718 l
+211.269818 69.581617 l
+212.352 69.146585 l
+213.434182 69.046319 l
+217.762909 69.198758 l
+218.845091 69.488415 l
+219.927273 69.495265 l
+222.091636 68.97565 l
+224.256 69.213669 l
+225.338182 69.003682 l
+226.420364 68.937297 l
+227.502545 69.527463 l
+228.584727 68.871479 l
+230.749091 68.888427 l
+232.913455 68.933166 l
+233.995636 69.594838 l
+235.077818 68.970366 l
+236.16 69.40553 l
+238.324364 68.848285 l
+240.488727 68.820732 l
+241.570909 68.990037 l
+242.653091 68.732481 l
+243.735273 68.887305 l
+245.899636 68.787054 l
+248.064 68.699872 l
+251.310545 68.680581 l
+268.625455 68.650998 l
+269.707636 68.734462 l
+271.872 68.677607 l
+275.118545 68.685532 l
+282.693818 68.628211 l
+290.269091 68.659456 l
+295.68 68.643288 l
+304.337455 68.674454 l
+315.159273 68.653713 l
+398.487273 68.63304 l
+398.487273 68.63304 l
+stroke
+grestore
+0.800 setlinewidth
+0 setlinejoin
+0.000 setgray
+gsave
+57.6 38.016 m
+57.6 304.128 l
+stroke
+grestore
+gsave
+414.72 38.016 m
+414.72 304.128 l
+stroke
+grestore
+gsave
+57.6 38.016 m
+414.72 38.016 l
+stroke
+grestore
+gsave
+57.6 304.128 m
+414.72 304.128 l
+stroke
+grestore
+1.000 setlinewidth
+0 setlinecap
+0.800 setgray
+gsave
+326.548125 266.78425 m
+407.72 266.78425 l
+409.053333 266.78425 409.72 267.450917 409.72 268.78425 c
+409.72 297.128 l
+409.72 298.461333 409.053333 299.128 407.72 299.128 c
+326.548125 299.128 l
+325.214792 299.128 324.548125 298.461333 324.548125 297.128 c
+324.548125 268.78425 l
+324.548125 267.450917 325.214792 266.78425 326.548125 266.78425 c
+cl
+gsave
+1.000 setgray
+fill
+grestore
+stroke
+grestore
+1.500 setlinewidth
+1 setlinejoin
+2 setlinecap
+0.000 0.000 1.000 setrgbcolor
+gsave
+328.548125 291.03425 m
+348.548125 291.03425 l
+stroke
+grestore
+0.000 setgray
+gsave
+
+356.548125 287.534250 translate
+0.000000 rotate
+0.000000 0 m /T glyphshow
+4.608398 0 m /r glyphshow
+8.719727 0 m /a glyphshow
+14.847656 0 m /i glyphshow
+17.625977 0 m /n glyphshow
+23.963867 0 m /space glyphshow
+27.142578 0 m /L glyphshow
+32.588867 0 m /o glyphshow
+38.707031 0 m /s glyphshow
+43.916992 0 m /s glyphshow
+grestore
+2.000 setlinewidth
+1.000 0.000 0.000 setrgbcolor
+gsave
+328.548125 276.362375 m
+348.548125 276.362375 l
+stroke
+grestore
+0.000 setgray
+gsave
+
+356.548125 272.862375 translate
+0.000000 rotate
+0.000000 0 m /T glyphshow
+4.358398 0 m /e glyphshow
+10.510742 0 m /s glyphshow
+15.720703 0 m /t glyphshow
+19.641602 0 m /space glyphshow
+22.820312 0 m /L glyphshow
+28.266602 0 m /o glyphshow
+34.384766 0 m /s glyphshow
+39.594727 0 m /s glyphshow
+grestore
+
+end
+showpage
