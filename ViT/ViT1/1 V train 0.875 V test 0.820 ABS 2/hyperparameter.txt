@@ -1,0 +1,18 @@
+act layer = ABS
+model: ViT1()
+n_epochs = 300
+alpha = 5
+optimizer = optim.Adam(network.parameters(), lr=0.00005)
+lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[100, 160, 200], gamma=0.1)
+
+Q Min pred error train: 0.00001730
+Q Min pred error test: 0.00014706
+Q Conv pred error train: 0.00048534
+Q Conv pred error test: 0.00132838
+V Min pred error train: 0.00003219
+V Min pred error test: 0.01565248
+V Conv pred error train: 0.01305788
+V Conv pred error test: 0.24861023
+
+Best Q: Qloss: 0.000282
+Best V: Vloss: 0.002262
