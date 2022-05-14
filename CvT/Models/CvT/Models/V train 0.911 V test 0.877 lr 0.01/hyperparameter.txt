@@ -1,0 +1,59 @@
+n_epochs = 200
+log_interval = 10
+batch_size_train = 64
+batch_size_test = 100
+alpha = 5  # Coefficient of V_loss
+device = torch.device('cuda')
+#没有加随机种子
+ModelPATH_bestVloss = 'D:\ERG4901\CvT_Project\model_bestV.pt'
+ModelPATH_bestQloss = 'D:\ERG4901\CvT_Project\model_bestQ.pt'
+
+模型：
+        """[B, C, H, W]: [B, 3, 5, 12]-->[B, 12, 3, 6]"""
+        self.stage1 = cls_cvt.VisionTransformer(
+            patch_size=3,
+            patch_stride=2,
+            patch_padding=1,
+            in_chans=3,
+            embed_dim=12,
+            depth=3,
+            num_heads=4,
+            # drop_rate=0.01,
+            mlp_ratio=2,
+            act_layer=ABS,
+            with_cls_token=False
+        )
+        """[B, C, H, W]: [B, 12, 3, 6]-->[B, 24, 2, 3]"""
+        self.stage2 = cls_cvt.VisionTransformer(
+            patch_size=3,
+            patch_stride=2,
+            patch_padding=1,
+            in_chans=12,
+            embed_dim=24,
+            depth=2,
+            num_heads=8,
+            # drop_rate=0.01,
+            mlp_ratio=2,
+            act_layer=ABS,
+            with_cls_token=False
+        )
+        """[B, C, H, W]: [B, 24, 2, 3]-->[B, 36, 1, 2]"""
+        self.stage3 = cls_cvt.VisionTransformer(
+            patch_size=2,
+            patch_stride=1,
+            patch_padding=0,
+            in_chans=24,
+            embed_dim=36,
+            depth=1,
+            num_heads=12,
+            # drop_rate=0.01,
+            mlp_ratio=2,
+            act_layer=ABS,
+            with_cls_token=False
+        )
+        self.mlpHead = nn.Linear(in_features=72, out_features=2)
+
+optimizer = optim.Adam(network.parameters(), lr=0.01, weight_decay = 0.00002)
+lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[80, 130], gamma=0.1)
+Best Q: Qloss: 0.000150
+Best V: Vloss: 0.001420
