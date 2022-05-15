@@ -1,0 +1,18 @@
+act layer = GELU
+model: ViT1()
+n_epochs = 300
+alpha = 5
+optimizer = optim.Adam(network.parameters(), lr=0.01)
+lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[100, 160, 200], gamma=0.1)
+
+Q Min pred error train: 0.00000000
+Q Min pred error test: 0.00015567
+Q Conv pred error train: 0.00063820
+Q Conv pred error test: 0.01849605
+V Min pred error train: 0.00005791
+V Min pred error test: 0.00074118
+V Conv pred error train: 0.01440105
+V Conv pred error test: 0.03706330
+
+Best Q: Qloss: 0.000227
+Best V: Vloss: 0.001390
